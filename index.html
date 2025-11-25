@@ -3,111 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Bescos | Executive Technology Leader</title>
+    <title>Connor Bescos | Building the Future</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <meta name="description" content="Connor Bescos - Executive Technology Leader, Cloud Solutions Architect, and Enterprise Security Expert">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Connor Bescos - Technologist, Security Architect, and Digital Transformation Leader">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <nav>
-        <div class="nav-brand">CB</div>
+        <a href="#" class="logo">CB<span class="logo-dot"></span></a>
         <div class="nav-links">
-            <a href="#about">Profile</a>
-            <a href="#expertise">Leadership</a>
-            <a href="#impact">Impact</a>
-            <a href="#contact">Contact</a>
+            <a href="#story">Story</a>
+            <a href="#craft">Craft</a>
+            <a href="#thinking">Thinking</a>
+            <a href="#connect" class="nav-cta">Let's Talk</a>
         </div>
+        <button class="mobile-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
         <div class="hero-content">
-            <h1>Connor Bescos</h1>
-            <p class="subtitle">Executive Technology Leader & Strategic Advisor</p>
-            <div class="hero-badges">
-                <span class="badge badge-primary">Digital Transformation</span>
-                <span class="badge badge-secondary">Enterprise Security</span>
-                <span class="badge badge-tertiary">Strategic Innovation</span>
+            <div class="hero-label">Director of Professional Services @ DivergeIT</div>
+            <h1>
+                <span class="line">I architect systems</span>
+                <span class="line">that <em>scale</em> businesses</span>
+                <span class="line">& <em>secure</em> futures.</span>
+            </h1>
+            <p class="hero-sub">Transforming enterprise technology from a cost center into a competitive weapon.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Building</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">CISSP</span>
+                    <span class="stat-label">Certified</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Azure</span>
+                    <span class="stat-label">Solutions Architect</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="story" class="section story">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>The Story</h2>
+            </div>
+            <div class="story-grid">
+                <div class="story-image">
+                    <div class="image-frame">
+                        <img src="profile.JPG" alt="Connor Bescos">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <p class="story-lead">I don't just implement technology. I translate chaos into clarity.</p>
+                    <p>Every organization I've worked with faced the same fundamental challenge: technology was something that happened <em>to</em> them, not <em>for</em> them. Systems sprawled. Security was an afterthought. Innovation felt impossible under the weight of technical debt.</p>
+                    <p>My job is to flip that script. I take the tangle of legacy systems, security concerns, and growth ambitions and weave them into something coherent, something that actually moves the needle.</p>
+                    <p>At DivergeIT, I lead teams that don't just solve problems, we prevent them. We build infrastructure that scales gracefully, security postures that hold under pressure, and digital experiences that people actually want to use.</p>
+                    <div class="story-signature">
+                        <span class="signature-line"></span>
+                        <span class="signature-text">The best technology is invisible. It just works.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="content-section">
+    <section id="craft" class="section craft">
         <div class="container">
-            <div class="text-content">
-                <h2>Executive Profile</h2>
-                <p>As Director of Professional Services at DivergeIT, I lead enterprise-wide digital transformation initiatives, combining strategic vision with deep technical expertise. With a proven track record in cloud architecture and cybersecurity, I help organizations navigate complex technological landscapes while ensuring robust security postures and operational excellence.</p>
-                <p>My approach integrates cutting-edge technologies with pragmatic business solutions, delivering measurable results and driving innovation across the enterprise ecosystem.</p>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>The Craft</h2>
             </div>
-            <div class="image-content">
-                <img src="profile.JPG" alt="Connor Bescos" class="profile-image">
+            <div class="craft-intro">
+                <p>Three pillars. One philosophy: technology should amplify human potential, not constrain it.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="content-section dark">
-        <div class="container">
-            <h2>Strategic Leadership</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card spotlight">
+            <div class="craft-grid">
+                <article class="craft-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                            <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                            <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <span class="card-number">01</span>
+                    <h3>Cloud Architecture</h3>
+                    <p>Building elastic, resilient infrastructures on Azure that grow with your ambitions. From lift-and-shift migrations to cloud-native transformations.</p>
+                    <ul class="card-tags">
+                        <li>Azure</li>
+                        <li>Infrastructure as Code</li>
+                        <li>DevOps</li>
+                        <li>Hybrid Cloud</li>
+                    </ul>
+                </article>
+                <article class="craft-card featured">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="card-number">02</span>
+                    <h3>Security & Zero Trust</h3>
+                    <p>Architecting defense-in-depth strategies that protect without paralyzing. CISSP-informed approaches to identity, access, and threat management.</p>
+                    <ul class="card-tags">
+                        <li>Zero Trust</li>
+                        <li>Identity</li>
+                        <li>Compliance</li>
+                        <li>SIEM/SOAR</li>
+                    </ul>
+                </article>
+                <article class="craft-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <span class="card-number">03</span>
                     <h3>Digital Transformation</h3>
-                    <p>Leading organizations through technological evolution with a focus on cloud architecture, operational efficiency, and sustainable growth. Specializing in enterprise-scale Azure solutions and modern workplace transformations.</p>
-                </div>
-                <div class="expertise-card spotlight">
-                    <h3>Security & Compliance</h3>
-                    <p>Developing comprehensive security frameworks that protect enterprise assets while enabling innovation. CISSP certified expert in implementing zero-trust architectures and maintaining regulatory compliance.</p>
-                </div>
-                <div class="expertise-card spotlight">
-                    <h3>Strategic Innovation</h3>
-                    <p>Driving competitive advantage through emerging technologies like AI and automation. Building high-performing teams that deliver exceptional results through collaborative innovation and measured outcomes.</p>
+                    <p>Orchestrating the human side of technology change. Strategy, adoption, and the cultural shifts that make modernization stick.</p>
+                    <ul class="card-tags">
+                        <li>Strategy</li>
+                        <li>Change Management</li>
+                        <li>AI/Automation</li>
+                        <li>Modern Workplace</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Cloud Architecture</span>
+                <span class="marquee-dot"></span>
+                <span>Security Strategy</span>
+                <span class="marquee-dot"></span>
+                <span>Digital Transformation</span>
+                <span class="marquee-dot"></span>
+                <span>Enterprise Solutions</span>
+                <span class="marquee-dot"></span>
+                <span>Zero Trust</span>
+                <span class="marquee-dot"></span>
+                <span>Azure</span>
+                <span class="marquee-dot"></span>
+                <span>Leadership</span>
+                <span class="marquee-dot"></span>
+                <span>Innovation</span>
+                <span class="marquee-dot"></span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>Cloud Architecture</span>
+                <span class="marquee-dot"></span>
+                <span>Security Strategy</span>
+                <span class="marquee-dot"></span>
+                <span>Digital Transformation</span>
+                <span class="marquee-dot"></span>
+                <span>Enterprise Solutions</span>
+                <span class="marquee-dot"></span>
+                <span>Zero Trust</span>
+                <span class="marquee-dot"></span>
+                <span>Azure</span>
+                <span class="marquee-dot"></span>
+                <span>Leadership</span>
+                <span class="marquee-dot"></span>
+                <span>Innovation</span>
+                <span class="marquee-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="thinking" class="section thinking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>The Thinking</h2>
+            </div>
+            <div class="thinking-grid">
+                <blockquote class="thinking-quote main-quote">
+                    <p>"Security isn't a feature you bolt on. It's a foundation you build up from. Every architectural decision either strengthens or weakens your posture."</p>
+                </blockquote>
+                <div class="thinking-principles">
+                    <div class="principle">
+                        <h4>On Complexity</h4>
+                        <p>The goal isn't to manage complexity, it's to eliminate it. Every system I design asks: what can we remove?</p>
+                    </div>
+                    <div class="principle">
+                        <h4>On Leadership</h4>
+                        <p>Technology leadership isn't about having all the answers. It's about building teams that find better answers than you could alone.</p>
+                    </div>
+                    <div class="principle">
+                        <h4>On Innovation</h4>
+                        <p>Real innovation isn't chasing trends. It's solving persistent problems in ways that weren't possible before.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="impact" class="content-section">
+    <section id="connect" class="section connect">
         <div class="container">
-            <h2>Areas of Impact</h2>
-            <div class="cert-grid">
-                <div class="cert-card glow">
-                    <h3>Business Growth</h3>
-                    <p>Enabling scalable growth through modern cloud architectures and efficient operational processes</p>
-                </div>
-                <div class="cert-card glow">
-                    <h3>Risk Management</h3>
-                    <p>Protecting enterprise value with robust security strategies and compliance frameworks</p>
-                </div>
-                <div class="cert-card glow">
-                    <h3>Innovation Culture</h3>
-                    <p>Fostering environments where technology drives business value and competitive advantage</p>
+            <div class="connect-content">
+                <h2>Let's build something.</h2>
+                <p>Whether you're wrestling with a cloud migration, hardening your security posture, or figuring out how to make technology actually work for your business, I'd love to hear about it.</p>
+                <div class="connect-links">
+                    <a href="mailto:connor@connorbescos.com" class="connect-btn primary">
+                        <span>Start a conversation</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/connor-bescos-29959b53/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/connorbescos" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="content-section interests dark">
-        <div class="container">
-            <h2>Professional Philosophy</h2>
-            <p class="interest-text">I believe in leveraging technology not just as a tool, but as a strategic asset that drives business value. My approach combines technical expertise with business acumen to deliver solutions that enhance operational efficiency, strengthen security postures, and create sustainable competitive advantages for organizations.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="content-section">
-        <div class="container">
-            <h2>Connect</h2>
-            <div class="contact-links">
-                <a href="mailto:connor@connorbescos.com" class="contact-button glow">Email</a>
-                <a href="https://www.linkedin.com/in/connor-bescos-29959b53/" target="_blank" rel="noopener noreferrer" class="contact-button glow">LinkedIn</a>
-                <a href="https://twitter.com/connorbescos" target="_blank" rel="noopener noreferrer" class="contact-button glow">Twitter</a>
-            </div>
+        <div class="connect-bg">
+            <div class="connect-grid"></div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2024 Connor Bescos | Executive Technology Leader</p>
+            <div class="footer-content">
+                <span class="footer-logo">CB</span>
+                <span class="footer-text">Built with intention. Secured by design.</span>
+                <span class="footer-year">2024</span>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 50);
+        });
+
+        // Hover effect for links
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                follower.classList.add('follower-hover');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                follower.classList.remove('follower-hover');
+            });
+        });
+
+        // Mobile menu
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Nav background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
