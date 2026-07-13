@@ -14,32 +14,45 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="refinements.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260713">
 </head>
 <body>
-  <nav>
-    <a class="brand" href="/" aria-label="Connor Bescos home">CB</a>
-    <div class="nav-meta"><span class="live-dot"></span> Daily intelligence</div>
-    <a class="home-link" href="#archive">Archive <span>↓</span></a>
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="i-ext" viewBox="0 0 12 12"><path d="M3 9 9 3M4.5 3H9v4.5"/></symbol>
+    <symbol id="i-down" viewBox="0 0 12 12"><path d="M6 2v8M2.5 6.5 6 10l3.5-3.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></symbol>
+  </svg>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Connor Bescos home">CB</a>
+      <div class="nav-meta"><span class="live-dot"></span> Daily intelligence</div>
+      <div class="nav-links">
+        <a href="#archive">Archive <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </div>
   </nav>
 
   <header class="masthead">
-    <p class="kicker">The operator's five-minute briefing</p>
-    <h1>The Latest<br><em>in AI.</em></h1>
-    <div class="masthead-bottom">
-      <p>The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
-      <div class="edition"><span>Current edition</span><strong>July 13, 2026</strong><small>09:15 PT · Edition 003</small></div>
+    <div class="wrap">
+      <p class="kicker">The operator's five-minute briefing</p>
+      <h1>The Latest <em>in AI.</em></h1>
+      <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
+      <div class="dateline">
+        <span class="stamp">Edition 003</span>
+        <strong>Monday, July 13, 2026</strong>
+        <span>09:15 PT</span>
+      </div>
     </div>
   </header>
 
-  <main>
-    <p class="edition-note"><b>Monday field note:</b> No material lab or platform release landed in the prior 24 hours across the <a href="https://openai.com/news/rss.xml" target="_blank" rel="noopener">OpenAI</a>, <a href="https://github.blog/changelog/feed/" target="_blank" rel="noopener">GitHub</a>, <a href="https://blog.google/innovation-and-ai/technology/ai/rss/" target="_blank" rel="noopener">Google AI</a>, and <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> primary sources reviewed. This shorter edition pulls forward the most consequential control change from Friday instead of manufacturing a launch.</p>
+  <main class="wrap">
+    <p class="edition-note"><b>Monday field note</b> No material lab or platform release landed in the prior 24 hours across the <a href="https://openai.com/news/rss.xml" target="_blank" rel="noopener">OpenAI</a>, <a href="https://github.blog/changelog/feed/" target="_blank" rel="noopener">GitHub</a>, <a href="https://blog.google/innovation-and-ai/technology/ai/rss/" target="_blank" rel="noopener">Google AI</a>, and <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> primary sources reviewed. This shorter edition pulls forward the most consequential control change from Friday instead of manufacturing a launch.</p>
 
     <section class="lead-grid" aria-labelledby="lead-title">
       <article class="lead-story">
-        <div class="story-label"><span>01</span> The one that matters</div>
+        <p class="story-label">The one that matters</p>
         <p class="category">Security · Delivery</p>
         <h2 id="lead-title">Prompt injection is becoming a code-scanning finding.</h2>
         <p class="dek">GitHub’s CodeQL 2.26.0 adds a JavaScript and TypeScript query that flags untrusted values flowing into an AI model’s system prompt. It also expands prompt-injection sinks across OpenAI, Anthropic, and Google GenAI SDKs.</p>
@@ -47,30 +60,74 @@
           <span>Operator read</span>
           <p>AI security is moving into the same delivery controls as SQL injection and secret scanning. Update CodeQL, confirm the query runs in CI, and make the resulting alerts part of the release gate for agent and copilot code.</p>
         </div>
-        <a class="source" href="https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection" target="_blank" rel="noopener">GitHub changelog <span>↗</span></a>
+        <a class="source" href="https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection" target="_blank" rel="noopener">GitHub changelog <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
-        <div class="story-label"><span>02</span> In 60 seconds</div>
-        <div class="quick-item"><span class="tag product">Enterprise</span><h3>Deutsche Telekom frames AI as operating-system work</h3><p>OpenAI’s new customer case describes a program spanning customer service, employee workflows, network operations, and voice—not a single assistant. The useful pattern is the portfolio: horizontal enablement plus domain-specific operations.</p><a href="https://openai.com/index/deutsche-telekom" target="_blank" rel="noopener">OpenAI case study ↗</a></div>
-        <div class="quick-item"><span class="tag research">FinOps</span><h3>AI budgets are getting user-level observability</h3><p>GitHub’s Enterprise Cloud REST API can now return every user’s progress against a multi-user budget, filter by consumption, and show individual overrides. Cost governance is becoming an API surface instead of a monthly spreadsheet.</p><a href="https://github.blog/changelog/2026-07-10-per-user-states-for-multi-user-budgets-in-the-rest-api" target="_blank" rel="noopener">GitHub changelog ↗</a></div>
-        <div class="quick-item"><span class="tag business">Interface</span><h3>Agent interfaces are turning into attention queues</h3><p>GitHub Mobile can now filter Copilot sessions by status, repository, type, and agent, then sort “needs attention” first. The product pattern matters beyond coding: asynchronous agents need a triage surface, not just a chat history.</p><a href="https://github.blog/changelog/2026-07-10-github-mobile-improved-filters-and-sorting-for-copilot-sessions" target="_blank" rel="noopener">GitHub changelog ↗</a></div>
+        <p class="story-label">In 60 seconds</p>
+        <div class="quick-item">
+          <span class="tag">Enterprise</span>
+          <h3>Deutsche Telekom frames AI as operating-system work</h3>
+          <p>OpenAI’s new customer case describes a program spanning customer service, employee workflows, network operations, and voice—not a single assistant. The useful pattern is the portfolio: horizontal enablement plus domain-specific operations.</p>
+          <a class="source" href="https://openai.com/index/deutsche-telekom" target="_blank" rel="noopener">OpenAI case study <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
+        <div class="quick-item">
+          <span class="tag">FinOps</span>
+          <h3>AI budgets are getting user-level observability</h3>
+          <p>GitHub’s Enterprise Cloud REST API can now return every user’s progress against a multi-user budget, filter by consumption, and show individual overrides. Cost governance is becoming an API surface instead of a monthly spreadsheet.</p>
+          <a class="source" href="https://github.blog/changelog/2026-07-10-per-user-states-for-multi-user-budgets-in-the-rest-api" target="_blank" rel="noopener">GitHub changelog <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
+        <div class="quick-item">
+          <span class="tag">Interface</span>
+          <h3>Agent interfaces are turning into attention queues</h3>
+          <p>GitHub Mobile can now filter Copilot sessions by status, repository, type, and agent, then sort “needs attention” first. The product pattern matters beyond coding: asynchronous agents need a triage surface, not just a chat history.</p>
+          <a class="source" href="https://github.blog/changelog/2026-07-10-github-mobile-improved-filters-and-sorting-for-copilot-sessions" target="_blank" rel="noopener">GitHub changelog <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
       </aside>
     </section>
 
     <section class="signal-section" aria-labelledby="signals-title">
-      <div class="section-head"><div><p class="kicker">Patterns, not headlines</p><h2 id="signals-title">Signals to carry<br>into the week.</h2></div><p>Three durable implications from the control layer—with a concrete operator action for each.</p></div>
+      <div class="section-head">
+        <p class="kicker">Patterns, not headlines</p>
+        <h2 id="signals-title">Signals to carry into the week.</h2>
+        <p>Three durable implications from the control layer—with a concrete operator action for each.</p>
+      </div>
       <div class="signal-grid">
-        <article><span class="signal-number">01</span><p class="trend">Secure delivery</p><h3>AI controls are moving left.</h3><p>CodeQL now models system-prompt injection as untrusted data flow into a security-sensitive sink.</p><div class="watch"><b>Do next</b> Add prompt and tool-call boundaries to threat models, then test the new query against a representative agent repository. <a href="https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection" target="_blank" rel="noopener">Source ↗</a></div></article>
-        <article><span class="signal-number">02</span><p class="trend">FinOps</p><h3>Seat counts are not enough.</h3><p>GitHub’s new endpoint exposes consumption and overrides at the individual level within enterprise budgets.</p><div class="watch"><b>MSP angle</b> Pair license administration with threshold alerts, exception handling, and a monthly workflow-level value review. <a href="https://github.blog/changelog/2026-07-10-per-user-states-for-multi-user-budgets-in-the-rest-api" target="_blank" rel="noopener">Source ↗</a></div></article>
-        <article><span class="signal-number">03</span><p class="trend">Interface</p><h3>Attention is the agent inbox.</h3><p>GitHub’s session filters treat status, agent identity, and “needs attention” as first-class navigation.</p><div class="watch"><b>Do next</b> Design every asynchronous workflow with owner, state, escalation reason, and resume point before adding more autonomy. <a href="https://github.blog/changelog/2026-07-10-github-mobile-improved-filters-and-sorting-for-copilot-sessions" target="_blank" rel="noopener">Source ↗</a></div></article>
+        <article>
+          <p class="trend">Secure delivery</p>
+          <h3>AI controls are moving left.</h3>
+          <p>CodeQL now models system-prompt injection as untrusted data flow into a security-sensitive sink.</p>
+          <div class="watch"><b>Do next</b> Add prompt and tool-call boundaries to threat models, then test the new query against a representative agent repository. <a class="source" href="https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection" target="_blank" rel="noopener">Source <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+        </article>
+        <article>
+          <p class="trend">FinOps</p>
+          <h3>Seat counts are not enough.</h3>
+          <p>GitHub’s new endpoint exposes consumption and overrides at the individual level within enterprise budgets.</p>
+          <div class="watch"><b>MSP angle</b> Pair license administration with threshold alerts, exception handling, and a monthly workflow-level value review. <a class="source" href="https://github.blog/changelog/2026-07-10-per-user-states-for-multi-user-budgets-in-the-rest-api" target="_blank" rel="noopener">Source <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+        </article>
+        <article>
+          <p class="trend">Interface</p>
+          <h3>Attention is the agent inbox.</h3>
+          <p>GitHub’s session filters treat status, agent identity, and “needs attention” as first-class navigation.</p>
+          <div class="watch"><b>Do next</b> Design every asynchronous workflow with owner, state, escalation reason, and resume point before adding more autonomy. <a class="source" href="https://github.blog/changelog/2026-07-10-github-mobile-improved-filters-and-sorting-for-copilot-sessions" target="_blank" rel="noopener">Source <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+        </article>
       </div>
     </section>
 
     <section class="conversation" aria-labelledby="conversation-title">
-      <div class="section-head"><div><p class="kicker">The conversation layer</p><h2 id="conversation-title">No signal<br>forced.</h2></div><p>Directional public signal, not verified product fact. X was not treated as comprehensive, and no accessible thread in the short research window cleared the usefulness bar.</p></div>
+      <div class="section-head">
+        <p class="kicker">The conversation layer</p>
+        <h2 id="conversation-title">No signal forced.</h2>
+        <p>Directional public signal, not verified product fact. X was not treated as comprehensive, and no accessible thread in the short research window cleared the usefulness bar.</p>
+      </div>
       <div class="conversation-list">
-        <article><span>00</span><div><h3>No conversation item selected today.</h3><p>The public conversation sampled was either repetitive launch reaction or insufficiently sourced. Silence is more useful than converting thin anecdotes into a trend.</p></div><p class="temperature">Coverage<br><b>Limited</b></p></article>
+        <article>
+          <div>
+            <h3>No conversation item selected today.</h3>
+            <p>The public conversation sampled was either repetitive launch reaction or insufficiently sourced. Silence is more useful than converting thin anecdotes into a trend.</p>
+          </div>
+          <p class="temperature">Coverage <b>Limited</b></p>
+        </article>
       </div>
     </section>
 
@@ -81,30 +138,118 @@
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
-      <div class="section-head"><div><p class="kicker">Previous editions</p><h2 id="archive-title">The archive.</h2></div><p>Prior briefs remain available as published. Open an edition to read it in full.</p></div>
+      <div class="section-head">
+        <p class="kicker">Previous editions</p>
+        <h2 id="archive-title">The archive.</h2>
+        <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
+      </div>
       <details class="archive-edition">
-        <summary><span><b>July 12, 2026</b><small>16:00 PT · Edition 002</small></span><strong>The Copilot upgrade is also a data-governance decision.</strong><i aria-hidden="true">+</i></summary>
+        <summary>
+          <span><b>July 12, 2026</b><small>16:00 PT · Edition 002</small></span>
+          <strong>The Copilot upgrade is also a data-governance decision.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
         <div class="archive-body">
-          <article><p class="category">Enterprise · Governance</p><h3>The Copilot upgrade is also a data-governance decision.</h3><p>Microsoft now offers OpenAI-operated models inside Microsoft 365 Copilot. They are off by default today, but Microsoft says they will turn on for eligible commercial customers on July 24 unless an administrator opts out.</p><div class="archive-callout"><b>Operator read</b> Treat this as a processor, residency, and access-control review—not a model-picker preference. Decide which groups need the new models, document the exclusions, and test the exact workflows before the default changes.</div><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor" target="_blank" rel="noopener">Microsoft's administrator guidance ↗</a></article>
-          <div class="archive-columns"><article><p class="category">Product</p><h3>GitHub makes model choice an explicit policy</h3><p>GPT-5.6 Sol, Terra, and Luna are rolling into Copilot, but Business and Enterprise administrators must enable them. The variants trade reasoning ceiling against speed and cost.</p><a href="https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/" target="_blank" rel="noopener">GitHub changelog ↗</a></article><article><p class="category">Research</p><h3>Peer behavior may beat a launch memo</h3><p>A Microsoft study of tens of thousands of engineers associates CLI-agent adoption with roughly 24% more merged pull requests and finds first use spread mainly through social networks. The authors caution that merged PRs are only a proxy for value.</p><a href="https://arxiv.org/abs/2607.01418" target="_blank" rel="noopener">Research paper ↗</a></article><article><p class="category">Workflow</p><h3>More output moves the bottleneck to review</h3><p>Another enterprise case study reports throughput reaching 2.09× baseline while reviewer load roughly doubled. Because tool use was not randomized, the authors stop short of exact causal attribution.</p><a href="https://arxiv.org/abs/2607.01904" target="_blank" rel="noopener">Research paper ↗</a></article></div>
-          <article><p class="category">Signals</p><h3>Model routing is becoming policy. Usage spreads through visible work. Cost follows task shape.</h3><p>Microsoft can assign OpenAI-operated model access by user or Entra security group; the rollout study found adoption traveled through peer networks; and the new model family arrived as three operating tiers.</p><div class="archive-callout"><b>Do next</b> Build model access by workflow and data class, make credible practitioner examples visible, and add routing, evaluation, and budget policy to managed AI.</div><a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">OpenAI ↗</a></article>
-          <article><p class="category">Conversation · Directional signal</p><h3>Model observability and workflow-specific regressions</h3><p>Microsoft 365 Copilot users were asking which model and reasoning setting were actually active. One anecdotal report also described a worse compliance-document workflow after the model change—useful as an eval prompt, not evidence of a general regression.</p><a href="https://www.reddit.com/r/microsoft_365_copilot/comments/1uubhk1/is_this_sol_terra_or_luna_and_even_within_that_is/" target="_blank" rel="noopener">Public model thread ↗</a> · <a href="https://www.reddit.com/r/microsoft_365_copilot/comments/1uthlm8/56_think_deeper_is_bad_as_compare_to_55_think/" target="_blank" rel="noopener">Public workflow thread ↗</a></article>
+          <article>
+            <p class="category">Enterprise · Governance</p>
+            <h3>The Copilot upgrade is also a data-governance decision.</h3>
+            <p>Microsoft now offers OpenAI-operated models inside Microsoft 365 Copilot. They are off by default today, but Microsoft says they will turn on for eligible commercial customers on July 24 unless an administrator opts out.</p>
+            <div class="archive-callout"><b>Operator read</b> Treat this as a processor, residency, and access-control review—not a model-picker preference. Decide which groups need the new models, document the exclusions, and test the exact workflows before the default changes.</div>
+            <a class="source" href="https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor" target="_blank" rel="noopener">Microsoft's administrator guidance <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Product</p>
+              <h3>GitHub makes model choice an explicit policy</h3>
+              <p>GPT-5.6 Sol, Terra, and Luna are rolling into Copilot, but Business and Enterprise administrators must enable them. The variants trade reasoning ceiling against speed and cost.</p>
+              <a class="source" href="https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/" target="_blank" rel="noopener">GitHub changelog <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Research</p>
+              <h3>Peer behavior may beat a launch memo</h3>
+              <p>A Microsoft study of tens of thousands of engineers associates CLI-agent adoption with roughly 24% more merged pull requests and finds first use spread mainly through social networks. The authors caution that merged PRs are only a proxy for value.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.01418" target="_blank" rel="noopener">Research paper <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Workflow</p>
+              <h3>More output moves the bottleneck to review</h3>
+              <p>Another enterprise case study reports throughput reaching 2.09× baseline while reviewer load roughly doubled. Because tool use was not randomized, the authors stop short of exact causal attribution.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.01904" target="_blank" rel="noopener">Research paper <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Model routing is becoming policy. Usage spreads through visible work. Cost follows task shape.</h3>
+            <p>Microsoft can assign OpenAI-operated model access by user or Entra security group; the rollout study found adoption traveled through peer networks; and the new model family arrived as three operating tiers.</p>
+            <div class="archive-callout"><b>Do next</b> Build model access by workflow and data class, make credible practitioner examples visible, and add routing, evaluation, and budget policy to managed AI.</div>
+            <a class="source" href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">OpenAI <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <article>
+            <p class="category">Conversation · Directional signal</p>
+            <h3>Model observability and workflow-specific regressions</h3>
+            <p>Microsoft 365 Copilot users were asking which model and reasoning setting were actually active. One anecdotal report also described a worse compliance-document workflow after the model change—useful as an eval prompt, not evidence of a general regression.</p>
+            <a class="source" href="https://www.reddit.com/r/microsoft_365_copilot/comments/1uubhk1/is_this_sol_terra_or_luna_and_even_within_that_is/" target="_blank" rel="noopener">Public model thread <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://www.reddit.com/r/microsoft_365_copilot/comments/1uthlm8/56_think_deeper_is_bad_as_compare_to_55_think/" target="_blank" rel="noopener">Public workflow thread <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
           <blockquote>“The next enterprise AI upgrade is not a version number. It is the policy, eval, and review system that decides where the version is allowed to matter.”</blockquote>
         </div>
       </details>
       <details class="archive-edition">
-        <summary><span><b>July 12, 2026</b><small>06:30 PT · Edition 001</small></span><strong>AI advantage is moving from access to ownership.</strong><i aria-hidden="true">+</i></summary>
+        <summary>
+          <span><b>July 12, 2026</b><small>06:30 PT · Edition 001</small></span>
+          <strong>AI advantage is moving from access to ownership.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
         <div class="archive-body">
-          <article><p class="category">Enterprise · Operating model</p><h3>AI advantage is moving from access to ownership.</h3><p>The enterprise conversation is shifting. Buying the same frontier models as everyone else is table stakes; durable advantage comes from the proprietary context, evaluation loops, workflow design, and operating data wrapped around them.</p><div class="archive-callout"><b>Operator read</b> Stop measuring adoption by seats provisioned. Measure the workflows your firm can execute better because the system has learned from your people, exceptions, and outcomes.</div><a href="https://www.techradar.com/pro/enterprises-are-not-building-ai-advantage-they-are-leasing-it" target="_blank" rel="noopener">Read the analysis ↗</a></article>
-          <div class="archive-columns"><article><p class="category">Product</p><h3>Anthropic tells the story behind Claude Code</h3><p>The useful lesson is organizational: the product grew from internal daily use, tight feedback loops, and permission to rebuild how technical work gets done.</p><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic ↗</a></article><article><p class="category">Research</p><h3>AI output is outrunning human review capacity</h3><p>A longitudinal enterprise study reports coding throughput eventually reaching 2.09× baseline—making review design, not generation speed, the next constraint.</p><a href="https://arxiv.org/abs/2607.01904" target="_blank" rel="noopener">Research paper ↗</a></article><article><p class="category">Business</p><h3>Infrastructure is becoming the agent bottleneck</h3><p>A reported 83% of organizations say their infrastructure needs an overhaul to fully use agentic AI. Integration debt is now adoption debt.</p><a href="https://www.techradar.com/pro/the-gap-between-ai-ambition-and-infrastructure-reality-is-widening-google-cloud-report-finds-83-percent-of-organizations-must-overhaul-their-infrastructure-in-order-to-maximize-the-agentic-ai-opportunity" target="_blank" rel="noopener">Report coverage ↗</a></article></div>
-          <article><p class="category">Signals</p><h3>The interface is becoming the workflow. Forward-deployed talent is back. Review is the new production.</h3><p>Teams are moving past chat windows toward agents embedded inside work, while vendors are putting technical teams beside customers and scarce human judgment shifts downstream to validation and accountability.</p></article>
-          <article><p class="category">Conversation · Directional signal</p><h3>Legacy-system reach and review capacity</h3><p>Practitioners were debating whether browser-first agents can cross old systems and undocumented exceptions—and whether companies are buying productivity or simply more output to inspect.</p></article>
+          <article>
+            <p class="category">Enterprise · Operating model</p>
+            <h3>AI advantage is moving from access to ownership.</h3>
+            <p>The enterprise conversation is shifting. Buying the same frontier models as everyone else is table stakes; durable advantage comes from the proprietary context, evaluation loops, workflow design, and operating data wrapped around them.</p>
+            <div class="archive-callout"><b>Operator read</b> Stop measuring adoption by seats provisioned. Measure the workflows your firm can execute better because the system has learned from your people, exceptions, and outcomes.</div>
+            <a class="source" href="https://www.techradar.com/pro/enterprises-are-not-building-ai-advantage-they-are-leasing-it" target="_blank" rel="noopener">Read the analysis <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Product</p>
+              <h3>Anthropic tells the story behind Claude Code</h3>
+              <p>The useful lesson is organizational: the product grew from internal daily use, tight feedback loops, and permission to rebuild how technical work gets done.</p>
+              <a class="source" href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Research</p>
+              <h3>AI output is outrunning human review capacity</h3>
+              <p>A longitudinal enterprise study reports coding throughput eventually reaching 2.09× baseline—making review design, not generation speed, the next constraint.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.01904" target="_blank" rel="noopener">Research paper <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Business</p>
+              <h3>Infrastructure is becoming the agent bottleneck</h3>
+              <p>A reported 83% of organizations say their infrastructure needs an overhaul to fully use agentic AI. Integration debt is now adoption debt.</p>
+              <a class="source" href="https://www.techradar.com/pro/the-gap-between-ai-ambition-and-infrastructure-reality-is-widening-google-cloud-report-finds-83-percent-of-organizations-must-overhaul-their-infrastructure-in-order-to-maximize-the-agentic-ai-opportunity" target="_blank" rel="noopener">Report coverage <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>The interface is becoming the workflow. Forward-deployed talent is back. Review is the new production.</h3>
+            <p>Teams are moving past chat windows toward agents embedded inside work, while vendors are putting technical teams beside customers and scarce human judgment shifts downstream to validation and accountability.</p>
+          </article>
+          <article>
+            <p class="category">Conversation · Directional signal</p>
+            <h3>Legacy-system reach and review capacity</h3>
+            <p>Practitioners were debating whether browser-first agents can cross old systems and undocumented exceptions—and whether companies are buying productivity or simply more output to inspect.</p>
+          </article>
           <blockquote>“The model is increasingly the interchangeable part. The operating system around it—context, workflow, review, and ownership—is where the business gets built.”</blockquote>
         </div>
       </details>
     </section>
   </main>
 
-  <footer><a href="/">CB</a><p>Daily AI intelligence for operators.</p><p>Archive begins July 2026 · <a href="mailto:connor@connorbescos.com">Send a signal</a></p></footer>
+  <footer>
+    <div class="wrap">
+      <a href="/">CB</a>
+      <p>Daily AI intelligence for operators.</p>
+      <p>Archive begins July 2026 · <a href="mailto:connor@connorbescos.com">Send a signal</a></p>
+    </div>
+  </footer>
 </body>
 </html>
