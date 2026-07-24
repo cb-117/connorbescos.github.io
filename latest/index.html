@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Latest in AI — July 23, 2026 | Connor Bescos</title>
-  <meta name="description" content="The July 23, 2026 operator briefing on reliable document agents, searchable long-horizon memory, trajectory-level evidence checks, and agent pentesting.">
-  <meta property="og:title" content="The Latest in AI — July 23, 2026">
-  <meta property="og:description" content="Document agents need artifact-native acceptance tests: the output can look right while formulas, metadata, or out-of-scope state are wrong.">
+  <title>The Latest in AI — July 24, 2026 | Connor Bescos</title>
+  <meta name="description" content="The July 24, 2026 operator briefing on confidence-routed agent approvals, permanent agent managers, stateless MCP, and local agents for governed data.">
+  <meta property="og:title" content="The Latest in AI — July 24, 2026">
+  <meta property="og:description" content="Agent confidence can route human attention, but it is not authorization. Treat review UX and permission enforcement as separate systems.">
   <meta property="og:url" content="https://connorbescos.com/latest/">
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2026-07-23T06:45:00-07:00">
+  <meta property="article:published_time" content="2026-07-24T06:30:00-07:00">
   <link rel="canonical" href="https://connorbescos.com/latest/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260723">
+  <link rel="stylesheet" href="styles.css?v=20260724">
 </head>
 <body>
   <svg style="display:none" aria-hidden="true">
@@ -40,49 +40,49 @@
       <h1>The Latest <em>in AI.</em></h1>
       <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
       <div class="dateline">
-        <span class="stamp">Edition 013</span>
-        <strong>Thursday, July 23, 2026</strong>
-        <span>06:45 PT</span>
+        <span class="stamp">Edition 014</span>
+        <strong>Friday, July 24, 2026</strong>
+        <span>06:30 PT</span>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="edition-note"><b>Thursday field note</b> No new model or platform release appeared after Wednesday’s brief in the reviewed <a href="https://openai.com/news/rss.xml" target="_blank" rel="noopener">OpenAI</a>, <a href="https://blog.google/innovation-and-ai/technology/ai/rss/" target="_blank" rel="noopener">Google AI</a>, <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a>, or <a href="https://github.blog/changelog/" target="_blank" rel="noopener">GitHub</a> primary feeds. The useful signal comes from <a href="https://arxiv.org/list/cs.AI/recent" target="_blank" rel="noopener">Thursday’s research listing</a>: current agents can produce plausible office artifacts while silently damaging the state that makes those artifacts trustworthy.</p>
+    <p class="edition-note"><b>Friday field note</b> No major model launch appeared after Thursday’s brief in the reviewed <a href="https://openai.com/news/rss.xml" target="_blank" rel="noopener">OpenAI</a>, <a href="https://blog.google/innovation-and-ai/technology/ai/rss/" target="_blank" rel="noopener">Google AI</a>, or <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> primary feeds. The material operating change came lower in the stack: <a href="https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/" target="_blank" rel="noopener">GitHub put confidence, rationale, and review queues around agent actions</a>—and documented exactly where that interface stops being a control.</p>
 
     <div class="lead-grid">
       <article class="lead-story">
         <p class="story-label">The one that matters</p>
-        <p class="category">Document agents · Reliability</p>
-        <h2 id="lead-title">A document can look finished and still be operationally broken.</h2>
-        <p class="dek">The new DocOps preprint evaluates agents on 210 controlled tasks across spreadsheets, word-processing files, presentations, and PDFs. Its verifier inspects the native artifact—not a screenshot or an LLM’s opinion—for requested structure, required content, and preservation of out-of-scope state. The authors report that the strongest tested configuration, GPT-5.5 with Codex and document skills, completed 67.1% overall; performance fell on longer single-document and cross-document workflows, with complex spreadsheet tasks particularly brittle. The recurring failures were lost global state, shallow semantic checks, and destructive edits to structural metadata.</p>
+        <p class="category">Agent operations · Interface design</p>
+        <h2 id="lead-title">Confidence can route review. It cannot grant authority.</h2>
+        <p class="dek">GitHub Issues now lets agent automations attach a rationale and a high, medium, or low confidence rating to supported changes such as labels, fields, issue type, closure, and assignment. Teams can allow high-confidence actions through while holding medium- and low-confidence suggestions in a review panel, with repository-level thresholds and a search filter for waiting work. GitHub is unusually explicit about the limit: these approvals are a workflow convenience, not a server-side security boundary, and an agent that already has permission can apply the change directly.</p>
         <div class="implication">
           <span>Operator read</span>
-          <p>“The file opens” is not an acceptance test. Before an agent edits a proposal, workbook, deck, or compliance packet, define the exact artifact invariants that must survive: formulas, references, styles, hierarchy, metadata, linked objects, and untouched regions. Release only the copy that passes native-format checks and remains reversible.</p>
+          <p>This is the right split for agent UX: use confidence to spend scarce human attention, and use policy to decide what the agent is allowed to do at all. Calibrate the review threshold against actual reversals and downstream harm; enforce identity, scope, and permissions outside the model’s self-reported confidence.</p>
         </div>
-        <a class="source" href="https://arxiv.org/abs/2607.19865" target="_blank" rel="noopener">DocOps preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://github.com/icip-cas/DocOps" target="_blank" rel="noopener">Benchmark and code <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/" target="_blank" rel="noopener">GitHub product note <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
         <p class="story-label">In 60 seconds</p>
         <div class="quick-item">
-          <span class="tag">Long-horizon memory</span>
-          <h3>Keep the whole history accessible, not all of it active</h3>
-          <p>PRO-LONG appends every interaction to a structured log, then lets a coding agent search that history with ordinary programmatic tools. On the 25 public ARC-AGI-3 games, the authors report an average 18-point gain over the same base coding agents and 4.2–5.8× fewer billed tokens than specialized comparison harnesses. Those are game-benchmark results, not an enterprise deployment study.</p>
-          <a class="source" href="https://arxiv.org/abs/2607.20064" target="_blank" rel="noopener">PRO-LONG preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Operating model</span>
+          <h3>Salesforce Legal made “agent manager” a permanent job</h3>
+          <p>In a vendor-authored case study, Salesforce’s legal team says an agent manager spent 18 months building risk-and-impact scoring, subject-matter-expert test teams, standardized guardrails, automated regression tests, and a review trigger for legal-grounded use cases. The useful signal is the ownership model, not the unverified productivity narrative: a named person owns the test system as models, content, and scope change.</p>
+          <a class="source" href="https://www.salesforce.com/news/stories/salesforce-legal-building-agentic-enterprise-playbook/" target="_blank" rel="noopener">Salesforce case study <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Evidence quality</span>
-          <h3>The right answer can come from the wrong evidence</h3>
-          <p>A workshop preprint examined 800 multimodal-search trajectories across four models and 200 tasks. Requiring both a correct answer and a clean evidence path reduced measured correctness by 0.6–7.3 percentage points, depending on the model. The taxonomy catches wrong-evidence/right-answer cases, provenance hallucination, cross-modal contradiction, and retrieval that launders weak support.</p>
-          <a class="source" href="https://arxiv.org/abs/2607.19793" target="_blank" rel="noopener">Silent-failures preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent infrastructure</span>
+          <h3>MCP’s next core is stateless by default</h3>
+          <p>GitHub says its MCP Server already supports the specification scheduled for July 28: sessions and <code>initialize</code> leave the core protocol, handshakes can run in parallel, and official conformance tests give clients and servers a shared verification target. GitHub removed Redis session writes and per-call reads while retaining compatibility through the official Go SDK.</p>
+          <a class="source" href="https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/" target="_blank" rel="noopener">GitHub MCP update <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Agent security</span>
-          <h3>Pentest the target profile, not only the payload</h3>
-          <p>Know Your Agent treats black-box probing as reconnaissance: map tools, schemas, permissions, refusal boundaries, task context, and defenses, then use the profile to craft indirect prompt injections. The authors report attack-success gains of up to 67 percentage points over tested baselines and include an OpenHands coding-agent case. This is a new preprint, not field prevalence data.</p>
-          <a class="source" href="https://arxiv.org/abs/2607.19837" target="_blank" rel="noopener">KYA preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Governed data</span>
+          <h3>Local agents get a workflow-specific evidence base</h3>
+          <p>A new preprint tests open-weight coding agents on 20 longitudinal-data preparation tasks covering 102 variables. The authors report average task completion up to 87.9% for 31–35B-parameter models on consumer-grade hardware. That is a small, curated research benchmark—not production proof—but the released ground truth and automated checks offer a practical pattern for sensitive workflows that cannot send data to a cloud model.</p>
+          <a class="source" href="https://arxiv.org/abs/2607.21482" target="_blank" rel="noopener">Local-agent preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <a class="source" href="https://github.com/UCL-ARC/RRBench" target="_blank" rel="noopener">Evaluation framework <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </aside>
     </div>
@@ -90,27 +90,27 @@
     <section class="signal-section" aria-labelledby="signals-title">
       <div class="section-head">
         <p class="kicker">Patterns, not headlines</p>
-        <h2 id="signals-title">Signals behind the artifact.</h2>
+        <h2 id="signals-title">Signals behind the review queue.</h2>
         <p>Three durable operating implications—with a concrete action for each.</p>
       </div>
       <div class="signal-grid">
         <article>
-          <p class="trend">Acceptance contracts</p>
-          <h3>Verify the native object, not its rendering.</h3>
-          <p>A visually plausible file can conceal broken formulas, relationships, hierarchy, or metadata. Evaluation has to understand the format and the permitted edit scope.</p>
-          <div class="watch"><b>Do next</b> Build golden artifacts with executable assertions for changed and unchanged state. Run every agent edit on a copy, compare native structure, render for human review, and retain the pre-edit version for rollback. <a class="source" href="https://arxiv.org/abs/2607.19865" target="_blank" rel="noopener">DocOps method <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Attention routing</p>
+          <h3>Confidence is a queueing primitive, not a permission.</h3>
+          <p>A useful agent interface makes uncertainty visible and sends ambiguous work to people. A secure system separately limits which actions the agent identity can execute.</p>
+          <div class="watch"><b>Do next</b> Start each action class in suggestion mode. Measure approval, reversal, exception, and downstream-harm rates by confidence band; automate only calibrated, reversible actions; keep authorization server-side. <a class="source" href="https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/" target="_blank" rel="noopener">GitHub control model <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Context architecture</p>
-          <h3>Accessible history and active context are different products.</h3>
-          <p>Summaries make retrieval easier but discard details before their future relevance is known. Injecting the full history preserves detail but raises cost and context degradation.</p>
-          <div class="watch"><b>Do next</b> Keep an append-only, structured run ledger outside the prompt. Give the agent bounded search over that ledger; log the exact slices retrieved; set retention and access policy separately from the model’s working context. <a class="source" href="https://arxiv.org/abs/2607.20064" target="_blank" rel="noopener">Programmatic-memory design <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Lifecycle ownership</p>
+          <h3>The agent manager is a release owner.</h3>
+          <p>Agent behavior drifts when models, prompts, tools, retrieval sources, permissions, schedules, or external services change—even if no user edits the agent.</p>
+          <div class="watch"><b>MSP angle</b> Sell a managed assurance lane with a dependency map, readiness contract, risk-tiered regression suite, incident owner, and retirement trigger. Pair the human role with scheduled checks instead of periodic policy review. <a class="source" href="https://www.salesforce.com/news/stories/salesforce-legal-building-agentic-enterprise-playbook/" target="_blank" rel="noopener">Operating case <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://arxiv.org/abs/2607.21495" target="_blank" rel="noopener">Continuous-assurance proposal <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Assurance services</p>
-          <h3>Agent QA becomes trajectory and attack-surface work.</h3>
-          <p>Final-answer checks miss evidence failures. Static prompt-injection suites miss the advantage an attacker gains by learning the agent’s environment across repeated probes.</p>
-          <div class="watch"><b>MSP angle</b> Add an agent-assurance lane: inventory tools and privileges, probe what the agent reveals, test adaptive indirect injections, validate evidence lineage, and deliver replayable traces plus remediation—not a one-time prompt score. <a class="source" href="https://arxiv.org/abs/2607.19793" target="_blank" rel="noopener">Trajectory diagnostics <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://arxiv.org/abs/2607.19837" target="_blank" rel="noopener">Reconnaissance testing <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Governance architecture</p>
+          <h3>Some sensitive work needs a smaller local lane.</h3>
+          <p>When policy prohibits sending personal or regulated data to a third-party model, the useful comparison is not local-versus-frontier in general. It is whether a local configuration clears the acceptance contract for one bounded job.</p>
+          <div class="watch"><b>Do next</b> Build a sanitized, workflow-native ground truth; score code and resulting data; run the model inside the governed boundary; route failed or unsupported cases to a person; report coverage beside accuracy. <a class="source" href="https://arxiv.org/abs/2607.21482" target="_blank" rel="noopener">Governed-data benchmark <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
       </div>
     </section>
@@ -118,15 +118,15 @@
     <section class="conversation" aria-labelledby="conversation-title">
       <div class="section-head">
         <p class="kicker">The conversation layer</p>
-        <h2 id="conversation-title">No conversation theme cleared the bar.</h2>
-        <p>X was not comprehensively accessible, and indexed public results were dominated by paper mirrors rather than substantive practitioner discussion.</p>
+        <h2 id="conversation-title">No fresh conversation theme cleared the bar.</h2>
+        <p>X was not comprehensively accessible, and indexed public reaction to the new controls was too thin to characterize as practitioner consensus.</p>
       </div>
       <div class="conversation-list">
         <article>
           <div>
-            <h3>The work is too fresh for a responsible directional read.</h3>
-            <p>Today’s papers were submitted on July 22 and appeared in Thursday’s listing. Until operators have attempted reproduction or mapped the findings to live document workflows, the research itself is the signal and public reaction is not.</p>
-            <a class="source" href="https://arxiv.org/list/cs.AI/recent" target="_blank" rel="noopener">Thursday research listing <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <h3>The product pattern is clearer than the public reaction.</h3>
+            <p>Search surfaced official announcements, automated mirrors, and older self-improvement debates, but not a sufficiently broad or recent operator sample on confidence-routed issue actions. The interface itself is observable; claims about practitioner sentiment are withheld.</p>
+            <a class="source" href="https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/" target="_blank" rel="noopener">Primary announcement <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
           </div>
           <p class="temperature">Signal <b>Withheld</b></p>
         </article>
@@ -135,8 +135,8 @@
 
     <section class="bottom-line" aria-labelledby="bottom-line-title">
       <h2 class="kicker" id="bottom-line-title">Connor's bottom line</h2>
-      <blockquote>“When an agent edits durable work, the acceptance contract belongs to the artifact—not the model, the prompt, or the screenshot.”</blockquote>
-      <p class="note">All four featured studies are new preprints or workshop research, not production failure-rate evidence. DocOps uses controlled synthetic tasks and a preservation-aware verifier; PRO-LONG evaluates public puzzle games; the silent-failures study relies on rubric-guided model judges with cross-validation; and KYA reports controlled attack experiments. X was not comprehensively accessible, so no conversation theme is presented.</p>
+      <blockquote>“Review UX decides where people look. Authorization decides what agents can touch. Mature operations need both—and must never confuse them.”</blockquote>
+      <p class="note">GitHub’s controls are in public preview. Salesforce’s legal example is a vendor-authored case study, and the local-agent and continuous-assurance items are new preprints rather than production prevalence data. X was not comprehensively accessible, so no conversation theme is presented.</p>
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -145,6 +145,55 @@
         <h2 id="archive-title">The archive.</h2>
         <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
       </div>
+      <details class="archive-edition">
+        <summary>
+          <span><b>July 23, 2026</b><small>06:45 PT · Edition 013</small></span>
+          <strong>A document can look finished and still be operationally broken.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
+        <div class="archive-body">
+          <article>
+            <p class="category">Document agents · Reliability</p>
+            <h3>A document can look finished and still be operationally broken.</h3>
+            <p>The DocOps preprint evaluated agents on 210 controlled tasks across spreadsheets, word-processing files, presentations, and PDFs. Its verifier inspected the native artifact for requested structure, required content, and preservation of out-of-scope state. The authors reported 67.1% overall completion for the strongest tested configuration, with longer and cross-document workflows proving more brittle.</p>
+            <div class="archive-callout"><b>Operator read</b> Define the exact artifact invariants that must survive—formulas, references, styles, hierarchy, metadata, linked objects, and untouched regions. Release only a copy that passes native-format checks and remains reversible.</div>
+            <a class="source" href="https://arxiv.org/abs/2607.19865" target="_blank" rel="noopener">DocOps preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://github.com/icip-cas/DocOps" target="_blank" rel="noopener">Benchmark and code <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Long-horizon memory</p>
+              <h3>Keep the whole history accessible, not all of it active</h3>
+              <p>PRO-LONG used an append-only structured log and programmatic search; the authors reported gains on 25 public ARC-AGI-3 games, not an enterprise deployment.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.20064" target="_blank" rel="noopener">PRO-LONG preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Evidence quality</p>
+              <h3>The right answer can come from the wrong evidence</h3>
+              <p>A workshop preprint separated final-answer correctness from trajectory evidence quality across 800 multimodal-search runs.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.19793" target="_blank" rel="noopener">Silent-failures preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Agent security</p>
+              <h3>Pentest the target profile, not only the payload</h3>
+              <p>Know Your Agent mapped tools, schemas, permissions, refusal boundaries, task context, and defenses before crafting indirect prompt injections.</p>
+              <a class="source" href="https://arxiv.org/abs/2607.19837" target="_blank" rel="noopener">KYA preprint <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Native-object checks. Searchable external history. Trajectory and attack-surface assurance.</h3>
+            <p>The edition argued for executable acceptance contracts on durable artifacts, append-only run ledgers outside active context, and managed assurance that tests evidence paths, tools, privileges, and adaptive attacks.</p>
+            <div class="archive-callout"><b>Do next</b> Keep golden artifacts and rollback copies, log exactly what history an agent retrieves, and deliver replayable traces plus remediation rather than a one-time prompt score.</div>
+          </article>
+          <article>
+            <p class="category">Conversation</p>
+            <h3>No conversation theme cleared the bar.</h3>
+            <p>X was not comprehensively accessible, and indexed results were dominated by paper mirrors rather than substantive practitioner discussion.</p>
+          </article>
+          <blockquote>“When an agent edits durable work, the acceptance contract belongs to the artifact—not the model, the prompt, or the screenshot.”</blockquote>
+        </div>
+      </details>
       <details class="archive-edition">
         <summary>
           <span><b>July 22, 2026</b><small>23:05 PT · Edition 012</small></span>
