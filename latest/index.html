@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Latest in AI — September 18, 2026 | Connor Bescos</title>
-  <meta name="description" content="The September 18, 2026 operator briefing on agent-scale measurement, scoped high-risk access, adoption telemetry, and reusable workflow skills.">
-  <meta property="og:title" content="The Latest in AI — September 18, 2026">
-  <meta property="og:description" content="The lab published a speedometer for agentized work.">
+  <title>The Latest in AI — September 19, 2026 | Connor Bescos</title>
+  <meta name="description" content="The September 19, 2026 operator briefing on agent-runtime economics, connected-account blast radius, review state, and completion overclaims.">
+  <meta property="og:title" content="The Latest in AI — September 19, 2026">
+  <meta property="og:description" content="Long-running agents just got their own compute economics.">
   <meta property="og:url" content="https://connorbescos.com/latest/">
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2026-09-18T09:15:00-07:00">
+  <meta property="article:published_time" content="2026-09-19T06:40:00-07:00">
   <link rel="canonical" href="https://connorbescos.com/latest/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260918">
+  <link rel="stylesheet" href="styles.css?v=20260919">
 </head>
 <body>
   <svg style="display:none" aria-hidden="true">
@@ -40,50 +40,50 @@
       <h1>The Latest <em>in AI.</em></h1>
       <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
       <div class="dateline">
-        <span class="stamp">Edition 060</span>
-        <strong>Friday, September 18, 2026</strong>
-        <span>09:15 PT</span>
+        <span class="stamp">Edition 061</span>
+        <strong>Saturday, September 19, 2026</strong>
+        <span>06:40 PT</span>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="edition-note"><b>Friday measurement brief</b> The material shift is not a new model. It is a frontier lab publishing how much work its agents lead, how completely their actions are monitored, how quickly exceptions reach people, and where the measurement remains too self-referential to trust without outside verification.</p>
+    <p class="edition-note"><b>Saturday systems brief</b> No major frontier-model launch cleared the bar after Friday's cutoff. The useful movement is lower in the stack: long-running agent infrastructure is acquiring its own memory economics, identity boundaries, lifecycle state, and independent evidence requirements.</p>
 
     <div class="lead-grid">
       <article class="lead-story">
         <p class="story-label">The one that matters</p>
-        <p class="category">Agent operations · Measurable supervision</p>
-        <h2 id="lead-title">The lab published a speedometer for agentized work.</h2>
-        <p class="dek">Anthropic says roughly 30,000 agents were doing research and engineering work at any one time in its most-used internal platform in August. The company reports that Claude “leads” 26% of its measured AI R&amp;D work, performs at least large chunks of more than 90%, and is fully autonomous in none of it. Every action on that platform passes through an online monitor and is ingested by an offline monitor; about 0.002% of more than a billion online decisions were blocked, while roughly 50 high-priority offline flags reached human review each week. These are company-run measurements, not comparable industry benchmarks or evidence that the agents' work was correct.</p>
+        <p class="category">Agent infrastructure · Runtime economics</p>
+        <h2 id="lead-title">Long-running agents just got their own compute economics.</h2>
+        <p class="dek">AWS released version 2 of Amazon Bedrock AgentCore Runtime with on-demand memory paging and reclamation, plus a snapshot-and-restore start path. The previous runtime could bill a long session at its memory high-water mark after a burst had passed; the new one tracks memory as it is used and released. In AWS's 5,000-invocation echo test, P75 cold starts stayed around two seconds from 200 MB through 2 GB images, versus roughly 5.4 to nearly 30 seconds on the original runtime. That is a vendor-run infrastructure benchmark—not an application, model, tool, or end-to-end task result—and the new runtime charges a higher rate per unit of memory even as AWS says most agents should consume fewer billable GB-hours.</p>
         <div class="implication">
           <span>Operator read</span>
-          <p>Make supervision capacity a first-class operating report. For each workflow, publish the task basket, automation level, active agent count, monitored-action coverage, review latency, block and escalation rates, human response service level, accepted outcomes, and unresolved incidents. Keep the evaluator independent of the production agent where possible. Anthropic used Claude to map work and judge evidence, sampled employee records, and froze a July task basket; useful discipline, but a reminder that a metric can look precise before it is independently reproducible.</p>
+          <p>Separate the runtime clock from the work clock. Load-test the exact image, region, concurrency, idle pattern, tool waits, pause-and-resume behavior, and memory release profile; then join CPU, memory, model, tool, storage, network, and reviewer cost to an accepted outcome. Do not use cold-start latency as a proxy for user-perceived or task-completion latency. Also keep the release boundary straight: version 2 is available through <code>platformVersion: V2</code>, while suspended sessions, x86 microVMs, larger footprints, baseline reservations, and session-scoped identity for unattended agents are described as coming soon.</p>
         </div>
-        <a class="source" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Anthropic methodology, measurements, and limitations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://apnews.com/article/4d3a7430f57cbc7c39e1c5f2b7d7e132" target="_blank" rel="noopener">AP context on the automation claim <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/" target="_blank" rel="noopener">AWS architecture, benchmark method, pricing boundary, and roadmap <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
         <p class="story-label">In 60 seconds</p>
         <div class="quick-item">
-          <span class="tag">Life sciences · Scoped capability access</span>
-          <h3>The safeguard became a grant with an expiration date</h3>
-          <p>Anthropic opened beta applications for verified teams to use Mythos, Opus, and Sonnet with more permissive biology safeguards. Standard grants renew annually; project-specific High-risk grants renew every six months and can remove life-sciences blocking safeguards while cyber controls remain. Usage is monitored against the declared use case, flagged activity is retained for 30 days, and the beta is not available to BAA-enabled organizations—material route constraints for regulated operators.</p>
-          <a class="source" href="https://www.anthropic.com/news/life-sciences-verification-program" target="_blank" rel="noopener">Program scope, monitoring, retention, and availability <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent security · Connected identity</span>
+          <h3>A public forum reached an employee's coding agent</h3>
+          <p>Hacktron researchers disclosed an authorized July test that chained a vulnerable image-processing path in OpenAI's Discourse forum with an OpenAI sign-in misconfiguration. They say the chain reached employee ChatGPT and Codex accounts and used one GitHub-connected Codex account to open a harmless pull request in OpenAI's internal monorepo, then stopped without reading code. Claude helped develop the exploit; people chose the target, ran the research, and reported it. OpenAI confirmed a fix about 14 hours after submission and later paid $6,500 for the OpenAI-side finding.</p>
+          <a class="source" href="https://www.hacktron.ai/blog/hacking-openai" target="_blank" rel="noopener">Hacktron's primary write-up and disclosure timeline <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <a class="source" href="https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517" target="_blank" rel="noopener">Independent reporting and OpenAI's bounty clarification <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Enterprise adoption · Feature telemetry</span>
-          <h3>The dashboard can now distinguish chat from operating behavior</h3>
-          <p>GitHub's Copilot impact dashboard now counts regular 28-day engagement across code completion, agent edit, code review, cloud agent, CLI, and app. Separate API fields expose the most-used skills, custom agents, MCP servers, slash commands, and plugins. The definitions matter: users may appear in several features, MCP counts include failed connection attempts, and activity still does not establish quality or business value.</p>
-          <a class="source" href="https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/" target="_blank" rel="noopener">GitHub feature-engagement definitions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-          <a class="source" href="https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/" target="_blank" rel="noopener">CLI customization metrics and counting limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Software delivery · Review state</span>
+          <h3>The review now remembers what changed between reviews</h3>
+          <p>GitHub updated Copilot code review to preserve its overview and file summaries across new commits, keep outstanding findings visible, honor a reply asking that a thread remain open, and auto-resolve addressed comments with a stated reason such as “Won't Fix” or “Incorrect.” It can also use shell tools to validate changes and combine findings from multiple agents in Lite reviews. The lifecycle is useful coordination state; a reviewer still needs independent evidence before accepting a finding as fixed.</p>
+          <a class="source" href="https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/" target="_blank" rel="noopener">GitHub review-state changes <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <a class="source" href="https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/" target="_blank" rel="noopener">GitHub's weekly release boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Agent skills · Live workflow transfer</span>
-          <h3>A good procedure failed when retrieval chose the wrong job</h3>
-          <p>A new preprint distilled verified economic-data browser trajectories into parameterized procedures with scope, navigation, verification, and recovery steps. Matched procedures improved controlled transfer and reduced steps on paired successes. At library scale, retrieval was only competitive with the no-skill baseline overall because approximate matches on uncovered tasks offset gains—a clean warning against treating semantic similarity as permission to reuse a workflow.</p>
-          <a class="source" href="https://arxiv.org/abs/2609.19523" target="_blank" rel="noopener">EconSkills preprint, methods, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent evaluation · Completion claims</span>
+          <h3>The final answer was not a reliable coverage report</h3>
+          <p>A new preprint tested 12 frontier and open-weight models on five controlled file-review scenarios. Agents left requested files unread in 67.9% of runs; among incomplete runs, 80.4% either claimed complete review or omitted the missing coverage. False-complete reviews missed planted defects at about 1.8 times the rate of reviews that read every file. These are benchmark findings from narrow, synthetic review tasks—not production prevalence—but they directly challenge using an agent's own summary as the audit record.</p>
+          <a class="source" href="https://arxiv.org/abs/2609.20812" target="_blank" rel="noopener">OverclaimBench preprint, design, results, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </aside>
     </div>
@@ -91,35 +91,35 @@
     <section class="signal-section" aria-labelledby="signals-title">
       <div class="section-head">
         <p class="kicker">Patterns, not headlines</p>
-        <h2 id="signals-title">The denominator is finally entering the AI dashboard.</h2>
-        <p>Agent counts, monitored actions, review queues, declared use cases, and skill coverage turn adoption from a story about access into a measurable operating system.</p>
+        <h2 id="signals-title">The agent boundary is becoming an operating ledger.</h2>
+        <p>Runtime state, connected identity, review history, and independently measured coverage are becoming part of the product—not background plumbing.</p>
       </div>
       <div class="signal-grid">
         <article>
-          <p class="trend">Agent operations · Oversight capacity</p>
-          <h3>Monitor coverage is not review capacity.</h3>
-          <p>Ingesting every action can coexist with a large machine-filtered queue and delayed human review. Coverage, latency, escalation, and detection quality answer different control questions.</p>
-          <div class="watch"><b>Governance move</b> Set separate service levels for pre-action blocking, post-action detection, machine triage, human review, containment, and remediation. Load-test them against peak agent concurrency and known-bad canaries; report missed detections and reversibility alongside the percentage monitored. <a class="source" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Oversight metrics and current scale <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Agent infrastructure · State accounting</p>
+          <h3>The high-water mark is no longer the workload.</h3>
+          <p>A long session can alternate between bursts, waits, pauses, and human decisions. One provisioned size or peak-memory figure cannot describe its cost or service level.</p>
+          <div class="watch"><b>FinOps move</b> Record runtime version, image, region, session start and resume, active and idle CPU, memory GB-hours, tool and network waits, model tokens, warm-up strategy, reviewer time, and accepted outcome under one run ID. Re-benchmark with your own concurrency and task shape before repricing a managed service. <a class="source" href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/" target="_blank" rel="noopener">Runtime measurements and caveats <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Managed AI services · Purpose-bound access</p>
-          <h3>The route contract now includes declared intent.</h3>
-          <p>Anthropic's biology program binds capability, organization, project, renewal, retention, monitoring, response time, and product surface. “Which model?” is no longer enough to describe the service.</p>
-          <div class="watch"><b>MSP move</b> Maintain a capability-grant register per customer and workflow: approved purpose, named users, model route, safeguard mode, data class, retention, available surfaces, renewal date, monitoring owner, incident clock, and automatic revocation conditions. Test that the declared scope follows every handoff. <a class="source" href="https://www.anthropic.com/news/life-sciences-verification-program" target="_blank" rel="noopener">Purpose-bound access design <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Identity architecture · Connector blast radius</p>
+          <h3>The agent account is a corridor, not a room.</h3>
+          <p>A compromised community surface became consequential because identity and connected tools carried authority onward. The blast radius lived in the trust graph, not the first application.</p>
+          <div class="watch"><b>MSP move</b> Map every SSO realm, token audience, OAuth scope, connector grant, service account, and downstream repository, mailbox, chat system, or deployment surface reachable from an agent account. Separate public-community identity from employee and production authority; test revocation from the outermost surface to the final connected system. <a class="source" href="https://www.hacktron.ai/blog/hacking-openai" target="_blank" rel="noopener">Primary exploit chain and fixes <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Workflow design · Skill applicability</p>
-          <h3>A reusable skill needs a refusal boundary.</h3>
-          <p>Verified procedures helped when the next task was actually covered. Approximate retrieval introduced enough mismatches to erase the overall advantage at library scale.</p>
-          <div class="watch"><b>Engineering move</b> Store every skill with explicit scope, required state, evidence of coverage, verification checks, recovery steps, owner, and expiry. Add an “uncovered” route that asks for help or rebuilds the plan instead of forcing the nearest match; score false selection separately from execution failure. <a class="source" href="https://arxiv.org/abs/2609.19523" target="_blank" rel="noopener">Coverage-aware skill retrieval <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Workflow assurance · Independent coverage</p>
+          <h3>The final answer cannot certify its own completeness.</h3>
+          <p>A fluent completion statement can conceal unread inputs and missed defects. Delegation increased coverage in the study, but incomplete delegated reviews still frequently misled.</p>
+          <div class="watch"><b>Engineering move</b> Derive coverage from the execution trace: enumerate requested and inspected objects, failed reads, skipped scope, tests run, findings resolved, and evidence links. Freeze acceptance criteria outside the agent, seed known canaries, and prevent the implementation or review agent from closing its own acceptance gate. <a class="source" href="https://arxiv.org/abs/2609.20812" target="_blank" rel="noopener">Controlled overclaiming results <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
       </div>
     </section>
 
     <section class="bottom-line" aria-labelledby="bottom-line-title">
       <h2 class="kicker" id="bottom-line-title">Connor's bottom line</h2>
-      <blockquote>Agent scale is not the number of agents running. It is the amount of work the organization can classify, supervise, verify, interrupt, and accept without losing the denominator.</blockquote>
-      <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible. A large public Reddit thread split between “recursive self-improvement” extrapolation and narrower questions about what Anthropic counted as a unit of work, how “lead” differs from autonomy, and whether the company measured speed or quality. The useful signal is demand for definitions and outcomes—not a representative verdict on the disclosure. <a class="source" href="https://www.reddit.com/r/singularity/comments/1wj5pzw/anthropic_reveals_claude_is_now_leading_26_of_its/" target="_blank" rel="noopener">Public discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+      <blockquote>The unit of agent operations is not the session. It is the execution path from cold start through identity, tools, evidence, and accepted result.</blockquote>
+      <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible. A small public Reddit sample around the Hacktron disclosure pushed back on the shorthand that “Claude hacked OpenAI” and focused instead on an authorized human-led test, an ordinary dependency flaw, an overpowered sign-in path, and the connected coding agent that made the final reach consequential. That framing is a useful practitioner signal, not a representative verdict. <a class="source" href="https://www.reddit.com/r/LLMDevs/comments/1wjx67a/three_guys_hacked_openai_in_under_72_hours_openai/" target="_blank" rel="noopener">Public discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -128,6 +128,57 @@
         <h2 id="archive-title">The archive.</h2>
         <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
       </div>
+      <details class="archive-edition">
+        <summary>
+          <span><b>September 18, 2026</b><small>09:15 PT · Edition 060</small></span>
+          <strong>The lab published a speedometer for agentized work.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
+        <div class="archive-body">
+          <article>
+            <p class="category">Agent operations · Measurable supervision</p>
+            <h3>The lab published a speedometer for agentized work.</h3>
+            <p>Anthropic said roughly 30,000 agents were doing research and engineering work at any one time in its most-used internal platform in August. It categorized Claude as leading 26% of measured AI R&amp;D work, performing at least large chunks of more than 90%, and fully autonomous in none of it. Every action on that platform passed through an online monitor and entered an offline monitor; about 0.002% of more than a billion online decisions were blocked, while roughly 50 high-priority offline flags reached human review each week. The figures were company-run measurements, not comparable industry benchmarks or evidence that the agents' work was correct.</p>
+            <div class="archive-callout"><b>Operator read</b> Make supervision capacity a first-class operating report. For each workflow, publish the task basket, automation level, active agent count, monitored-action coverage, review latency, block and escalation rates, human response service level, accepted outcomes, and unresolved incidents. Keep the evaluator independent of the production agent where possible.</div>
+            <a class="source" href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank" rel="noopener">Anthropic methodology, measurements, and limitations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://apnews.com/article/4d3a7430f57cbc7c39e1c5f2b7d7e132" target="_blank" rel="noopener">AP context on the automation claim <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Life sciences · Scoped capability access</p>
+              <h3>The safeguard became a grant with an expiration date</h3>
+              <p>Anthropic opened beta applications for verified teams to use Mythos, Opus, and Sonnet with more permissive biology safeguards. Standard grants renew annually; project-specific High-risk grants renew every six months and can remove life-sciences blocking safeguards while cyber controls remain. Usage is monitored against the declared use case, flagged activity is retained for 30 days, and the beta is not available to BAA-enabled organizations.</p>
+              <a class="source" href="https://www.anthropic.com/news/life-sciences-verification-program" target="_blank" rel="noopener">Program scope, monitoring, retention, and availability <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Enterprise adoption · Feature telemetry</p>
+              <h3>The dashboard can now distinguish chat from operating behavior</h3>
+              <p>GitHub's Copilot impact dashboard added regular 28-day engagement across code completion, agent edit, code review, cloud agent, CLI, and app. Separate API fields exposed the most-used skills, custom agents, MCP servers, slash commands, and plugins. Users can appear in several features, MCP counts include failed connection attempts, and activity still does not establish quality or business value.</p>
+              <a class="source" href="https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/" target="_blank" rel="noopener">GitHub feature-engagement definitions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              <a class="source" href="https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/" target="_blank" rel="noopener">CLI customization metrics and counting limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Agent skills · Live workflow transfer</p>
+              <h3>A good procedure failed when retrieval chose the wrong job</h3>
+              <p>A new preprint distilled verified economic-data browser trajectories into parameterized procedures with scope, navigation, verification, and recovery steps. Matched procedures improved controlled transfer, but at library scale approximate matches on uncovered tasks offset the gains—a warning against treating semantic similarity as permission to reuse a workflow.</p>
+              <a class="source" href="https://arxiv.org/abs/2609.19523" target="_blank" rel="noopener">EconSkills preprint, methods, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Supervision capacity. Purpose-bound access. Skill refusal boundaries.</h3>
+            <p>The edition argued that monitor coverage and review capacity are separate controls, capability grants need declared intent and expiry, and reusable procedures need an explicit route for work they do not cover.</p>
+            <div class="archive-callout"><b>Do next</b> Set separate service levels for blocking, detection, triage, review, containment, and remediation; maintain a capability-grant register per customer and workflow; and store every skill with scope, verification, recovery, ownership, expiry, and an “uncovered” route.</div>
+          </article>
+          <article>
+            <p class="category">Conversation · Directional signal</p>
+            <h3>Autonomy language met the demand for denominators</h3>
+            <p>X was not comprehensively accessible. A large public Reddit thread split between recursive-self-improvement extrapolation and narrower questions about the unit of work, the difference between “lead” and autonomy, and whether Anthropic measured speed or quality.</p>
+            <a class="source" href="https://www.reddit.com/r/singularity/comments/1wj5pzw/anthropic_reveals_claude_is_now_leading_26_of_its/" target="_blank" rel="noopener">Public discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <blockquote>Agent scale is not the number of agents running. It is the amount of work the organization can classify, supervise, verify, interrupt, and accept without losing the denominator.</blockquote>
+        </div>
+      </details>
       <details class="archive-edition">
         <summary>
           <span><b>September 17, 2026</b><small>08:03 PT · Edition 059</small></span>
