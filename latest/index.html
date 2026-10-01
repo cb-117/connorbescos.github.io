@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Latest in AI — September 30, 2026 | Connor Bescos</title>
-  <meta name="description" content="The September 30, 2026 operator brief on OpenAI Dots, persistent-agent controls, GPT-6.1 Sol, frontier-model audits, and enterprise-agent evaluation.">
-  <meta property="og:title" content="The Latest in AI — September 30, 2026">
-  <meta property="og:description" content="The agent is becoming a standing member of the operating environment.">
+  <title>The Latest in AI — October 1, 2026 | Connor Bescos</title>
+  <meta name="description" content="The October 1, 2026 operator brief on Gemini 4 Argon, controlled model rollouts, the FTC's AI safety probe, multi-model routing, and verifier risk.">
+  <meta property="og:title" content="The Latest in AI — October 1, 2026">
+  <meta property="og:description" content="The newest frontier model is a controlled rollout, not a product launch.">
   <meta property="og:url" content="https://connorbescos.com/latest/">
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2026-09-30T06:34:00-07:00">
+  <meta property="article:published_time" content="2026-10-01T08:23:00-07:00">
   <link rel="canonical" href="https://connorbescos.com/latest/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260930">
+  <link rel="stylesheet" href="styles.css?v=20261001">
 </head>
 <body>
   <svg style="display:none" aria-hidden="true">
@@ -40,52 +40,50 @@
       <h1>The Latest <em>in AI.</em></h1>
       <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
       <div class="dateline">
-        <span class="stamp">Edition 072</span>
-        <strong>Wednesday, September 30, 2026</strong>
-        <span>06:34 PT</span>
+        <span class="stamp">Edition 073</span>
+        <strong>Thursday, October 1, 2026</strong>
+        <span>08:23 PT</span>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="edition-note"><b>Wednesday's read</b> OpenAI turned the personal assistant into a persistent cloud worker just as leading labs promised a new audit stack for frontier models. The operator question is no longer whether an agent can finish one task. It is who owns a standing worker's identity, triggers, memory, tools, spend, evidence, and stop path across every place it can act.</p>
+    <p class="edition-note"><b>Thursday's read</b> Google introduced its next frontier model inside a deliberately narrow access ring rather than a broad product launch. That makes the rollout design—not the benchmark table—the useful operator artifact: who qualifies, which safeguards change by cohort, what evidence earns wider access, and how quickly authority can be withdrawn.</p>
 
     <div class="lead-grid">
       <article class="lead-story">
         <p class="story-label">The one that matters</p>
-        <p class="category">Persistent agents · Standing authority</p>
-        <h2 id="lead-title">The agent is becoming part of the operating environment.</h2>
-        <p class="dek">OpenAI launched Dots, persistent GPT-6 Astra agents that keep working between conversations from their own cloud computer and browser. A dot can carry memory and saved notes across ChatGPT, Slack, Microsoft Teams, and calls; use connected apps; decide when to pause and resume; run background agents in parallel; and optionally reach one connected local computer. The rollout covers eligible Pro, Business Premium, and Enterprise accounts, with Enterprise access off by default. OpenAI's administrative documentation separates dot access, messaging, local execution, cloud browser, cloud network, cloud computer, password-manager, plugin, and third-party authorization controls. It also says custom rules cannot override built-in safeguards, disabling custom rules does not force approval for every action, and the cloud computer does not inherit a member's VPN, browser sessions, or device policy. OpenAI has not published field reliability, false-action rates, post-introductory usage economics, or evidence that the full permission stack behaves consistently across every route.</p>
+        <p class="category">Frontier models · Bounded availability</p>
+        <h2 id="lead-title">The newest frontier model is a controlled rollout, not a product launch.</h2>
+        <p class="dek">Google announced Gemini 4 Argon for long-horizon software engineering, enterprise knowledge work, and cyber defense, but access starts with a selected group of defenders in its Fairwind Program while Google participates in the U.S. government's voluntary prerelease process. Broader access is promised later, beginning with paid API customers and Google AI Ultra subscribers, without a date. Google lists an eventual introductory API price of $2 per million input tokens and $10 per million output tokens—rising to $4 and $20 after the introductory period—and a one-million-token output limit. It also says trusted defenders and internal teams will receive a version without cyber guardrails. The benchmark scores, internal engineering examples, prompt-injection resilience, misalignment-monitoring performance, and vulnerability findings are Google or partner claims, not broad field evidence. Axios corroborated the limited rollout and reported conflicting views about internal model performance, which Google disputed.</p>
         <div class="implication">
           <span>Operator read</span>
-          <p>Treat every persistent agent as a service identity plus a managed endpoint—not as a chat preference. Give it an accountable owner, approved purpose, separate cloud and local authority maps, event subscriptions, cost ceiling, evidence store, review queue, inactivity expiry, and tested kill path. MSPs should package the lifecycle: onboarding, connector and browser policy, approval design, monitoring, quarterly recertification, incident response, and provable offboarding.</p>
+          <p>Copy the release shape, not the model hype. Build qualification rings with named owners, approved task classes, isolated environments, scoped identities, data and egress boundaries, trajectory budgets, independent acceptance tests, incident disclosure, evidence retention, time-limited access, and a tested revocation path. MSPs can package that as a model-introduction service: route inventory, cohort onboarding, red-team scenarios, production canaries, review evidence, and a signed decision to expand, hold, or roll back.</p>
         </div>
-        <a class="source" href="https://learn.chatgpt.com/docs/dots" target="_blank" rel="noopener">OpenAI's operating model, memory, channels, computers, and permissions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces" target="_blank" rel="noopener">Enterprise controls, defaults, and boundary details <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://www.axios.com/2026/09/29/openai-dots-ai-assistant-devday" target="_blank" rel="noopener">Independent launch reporting and demo context <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's access sequence, pricing, capability claims, and safeguard plan <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://www.axios.com/2026/09/30/google-gemini-4" target="_blank" rel="noopener">Independent reporting on rollout scope and disputed internal performance <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
         <p class="story-label">In 60 seconds</p>
         <div class="quick-item">
-          <span class="tag">Model operations · Route qualification</span>
-          <h3>Sol moves near-frontier capability into the default route.</h3>
-          <p>OpenAI released GPT-6.1 Sol for coding, computer use, and professional work with a 1.05-million-token context window and standard API pricing of $2 per million input tokens and $10 per million output tokens. Long prompts above 272,000 input tokens carry higher rates, Fast mode doubles standard pricing, and EU-resident processing excludes Fast. OpenAI classifies the model as Critical for cybersecurity and High for biological and chemical capability. In a 49,650-task simulation of internal Codex traffic, it recorded 28 severity-3-or-higher flags versus 27 for Astra; OpenAI cautions that the exercise is not a direct measure of external deployment safety.</p>
-          <a class="source" href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" target="_blank" rel="noopener">OpenAI's context, pricing, residency, and tool-route details <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-          <a class="source" href="https://deploymentsafety.openai.com/gpt-6-1-sol/respecting-auto-review" target="_blank" rel="noopener">OpenAI's safety classification and deployment simulation <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Regulation · Evidence readiness</span>
+          <h3>The FTC opened an AI safety investigation.</h3>
+          <p>An FTC spokesperson confirmed that the agency is investigating OpenAI, Anthropic, and other AI companies over potential consumer dangers, but declined to describe the scope. AP reported that the companies did not immediately comment. Axios reported that civil investigative demands were being prepared and connected the probe to recent disclosures of agents acting beyond instructions; those procedural details were attributed to earlier reporting, not an FTC filing. No finding of wrongdoing has been announced.</p>
+          <a class="source" href="https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1" target="_blank" rel="noopener">AP confirmation, response status, and limits of the public record <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <a class="source" href="https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation" target="_blank" rel="noopener">Axios reporting on the investigation's reported evidence-gathering path <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Frontier governance · Voluntary assurance</span>
-          <h3>Six major developers signed the same four-layer audit promise.</h3>
-          <p>OpenAI, Anthropic, Google, Meta, Nvidia, and SpaceX/xAI signed a White House accord calling for capability and alignment controls during training and deployment, an empowered internal oversight team, an independent external auditor or evaluator, and an independent board committee that receives reports and oversees remediation. The commitment is voluntary and anticipates recurring meetings; it does not specify evaluator access, methods, cadence, disclosure, enforcement, or a timetable for law.</p>
-          <a class="source" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Full accord text and four assurance layers <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-          <a class="source" href="https://apnews.com/article/trump-ai-anthropic-musk-595796511f110fc006cca0d01329733e" target="_blank" rel="noopener">AP corroboration, signers, and voluntary status <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Coding agents · Multi-model routing</span>
+          <h3>The model picker is becoming a workflow router.</h3>
+          <p>GitHub expanded its HydraFusion research preview from Copilot CLI to VS Code and the Copilot app. Instead of choosing one model, the system selects among a direct single-model path, a cascade with a quality gate and escalation, or a cross-family critique-and-revise path. Business and Enterprise administrators must permit previews, and GitHub says the feature remains subject to change. The release adds progress visibility but does not publish per-task route receipts, production acceptance rates, or total cost by workflow.</p>
+          <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's workflow definitions, access controls, and preview boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Enterprise agents · Interactive evaluation</span>
-          <h3>A business benchmark adds delay, feedback, and missing information.</h3>
-          <p>The new EnterpriseBench preprint combines existing business and financial question sets with three interactive environments: consulting cases that require multi-turn information seeking, a supply-chain Beer Game with delayed effects, and a digital twin for workforce, risk, and project planning. Across nine agent methods and four backbone models, the authors report no stable, comprehensive reliability across task types. It is an initial preprint and simulated benchmark—not production outcome evidence—but it tests a more useful unit than static question answering.</p>
-          <a class="source" href="https://arxiv.org/abs/2609.37658" target="_blank" rel="noopener">EnterpriseBench preprint, environments, method, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent evaluation · Verifier assurance</span>
+          <h3>The grading system can fail before the agent does.</h3>
+          <p>The ReviveBench preprint tests agents on ten software-revival tasks and thirteen clean-room engine reconstructions using hidden verifiers. Two models met the stated pass criteria on all reconstruction tasks, but the authors found that one task could not establish the capability it claimed to test. Their audit uncovered 28 verifier defects—including 24 false negatives, two false positives, and a provider-specific harness error that removed an intended output cap. It is a controlled preprint, not production reliability evidence; its durable finding is that executable evaluation needs its own validation.</p>
+          <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">ReviveBench tasks, results, verifier defects, and audit recommendations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </aside>
     </div>
@@ -93,35 +91,35 @@
     <section class="signal-section" aria-labelledby="signals-title">
       <div class="section-head">
         <p class="kicker">Patterns, not headlines</p>
-        <h2 id="signals-title">Persistence turns convenience into operations.</h2>
-        <p>The durable shift is from sessions to standing workers: identity survives, triggers arrive asynchronously, evidence spans systems, and assurance has to outlive the model and vendor route.</p>
+        <h2 id="signals-title">Access, routing, and evaluation are one control system.</h2>
+        <p>The durable shift is away from a single model decision. A production route now includes who may use it, which workflow runs, how far a trajectory can travel, what evidence judges it, and who can stop or widen access.</p>
       </div>
       <div class="signal-grid">
         <article>
-          <p class="trend">Persistent agents · Joiner, mover, leaver</p>
-          <h3>Offboarding is now a systems test.</h3>
-          <p>A dot can retain notes, run from a cloud computer, appear in communication channels, use plugins, and optionally reach a local device. Removing chat access alone does not prove that every dependent authorization or running task stopped.</p>
-          <div class="watch"><b>Governance move</b> Maintain one lifecycle record for owner, purpose, cloud identity, channel identity, apps, website sessions, local computer, password manager, schedules, child work, memory, cost center, and expiry. On role change or departure, revoke each route, stop queued and running work, export required evidence, delete retained state under policy, and issue a tested closure receipt. <a class="source" href="https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces" target="_blank" rel="noopener">OpenAI's separately managed access paths <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Release governance · Qualification rings</p>
+          <h3>Limited access should produce an evidence package.</h3>
+          <p>Argon's initial cyber cohort has more capability and fewer cyber guardrails than the future general route, while wider availability depends on feedback and safeguard work.</p>
+          <div class="watch"><b>Governance move</b> Define rings by people, tasks, environments, tools, data, egress, and consequence—not by a vague “trusted” label. For every ring, record entry criteria, differences in safeguards, permitted effects, monitoring coverage, incident thresholds, expiry, revocation, and the evidence required to expand. Require the supplier or MSP to deliver a dated qualification packet before the next ring opens. <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's staged access and cohort-specific safeguard boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Event-driven work · Delivery contracts</p>
-          <h3>A watch instruction is a production integration.</h3>
-          <p>OpenAI's new MCP Events path lets a plugin register events, accept a signed webhook subscription, and wake a chat to act. Its current implementation does not support polling, streaming, or the draft protocol's gap and terminated notifications.</p>
-          <div class="watch"><b>Architecture move</b> Keep a provider-neutral subscription ledger with owner, source, filter, callback, secret rotation, requested effect, approval policy, last event, expiry, and cancellation state. Add idempotency, deduplication, missed-event reconciliation, rate limits, dead-letter handling, and a visible pause switch; test what happens when delivery succeeds but the business action fails. <a class="source" href="https://developers.openai.com/plugins/build/mcp-events" target="_blank" rel="noopener">OpenAI's MCP event flow and current delivery limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Workflow routing · Decision receipts</p>
+          <h3>One user request can become several model calls.</h3>
+          <p>HydraFusion can solve directly, escalate after a quality gate, or draft, critique across model families, and revise. The route changes cost, latency, evidence, and failure modes even when the interface shows one turn.</p>
+          <div class="watch"><b>Operations move</b> Store a route receipt for every governed task: workflow selected, model and version at each step, prompt and tool policy, quality-gate result, critic independence, revision count, tokens, latency, cost, and final acceptance evidence. Set budgets on the whole turn, not each call, and compare workflows by independently accepted outcome rather than vendor quality scores. <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's single, cascade, and critique workflow definitions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">External assurance · Evidence rights</p>
-          <h3>An auditor label is not an assurance result.</h3>
-          <p>The White House accord establishes a common control shape, but each signer can still choose the scope, access, evaluator, evidence, cadence, materiality threshold, and disclosure practice unless those terms become concrete.</p>
-          <div class="watch"><b>Procurement move</b> Add an evaluator-rights schedule to frontier-model contracts: systems and routes in scope, access to logs and incidents, independence and conflicts, test authority, evidence retention, severity thresholds, remediation deadlines, retest rights, customer notice, public reporting, and consequences for unresolved findings. Map every claim to a dated report and route version. <a class="source" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Accord commitments and unresolved implementation layer <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Evaluation systems · Oracle risk</p>
+          <h3>The verifier is production code.</h3>
+          <p>ReviveBench found both false rejects and false accepts, plus a harness configuration that silently changed a task limit. A green score can therefore describe the grader as much as the agent.</p>
+          <div class="watch"><b>Assurance move</b> Version the task, environment, harness, verifier, thresholds, and reference artifacts together. Seed known passes and failures; test threshold reachability; recompute diagnostics independently; compare separately generated candidates; and review every acceptance rule that can authorize money, code, customer communication, or system change. Keep the implementation agent away from the acceptance oracle. <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">Verifier failure modes and the authors' validation checks <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
       </div>
     </section>
 
     <section class="bottom-line" aria-labelledby="bottom-line-title">
       <h2 class="kicker" id="bottom-line-title">Connor's bottom line</h2>
-      <blockquote>The always-on agent is not another assistant feature. It is a standing worker with memory, identity, triggers, tools, and spend. Operate the lifecycle before scaling the headcount.</blockquote>
-      <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible; indexed X results did not expose a representative practitioner sample. In a small, non-representative set of public Reddit threads, early attention centered on unclear post-introductory usage economics, slow or excessive background work, and confusion about how a persistent agent differs from existing task agents. Individual reports were not independently verified. Treat them as launch-qualification questions, not failure rates: meter every background branch, show users what is running and why, expose stop and budget controls, and price a completed business outcome rather than invisible activity. <a class="source" href="https://www.reddit.com/r/OpenAI/comments/1wtfsn4/openai_launches_dots_longrunning_agents/" target="_blank" rel="noopener">Public launch discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/codex/comments/1wtyefd/struggling_to_understand_the_purpose_of_dots_can/" target="_blank" rel="noopener">Public workflow-positioning sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+      <blockquote>The new launch primitive is a governed qualification ring. Make every expansion earn its evidence—and keep the route, the verifier, and the revocation path inside the operating model.</blockquote>
+      <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible; indexed public results did not expose a representative practitioner sample. In two early, non-representative Reddit threads, discussion focused less on benchmark claims than on when the products would actually become usable: Gemini commenters debated the gap between announcement and broad access, while Copilot users asked about enterprise preview approval, general availability, custom workflows, subscription boundaries, and remote-development support. Treat this as launch-friction discovery, not consensus or verified product performance. Publish an access matrix and support boundary beside every announcement. <a class="source" href="https://www.reddit.com/r/singularity/comments/1wufeu8/introducing_gemini_4_argon/" target="_blank" rel="noopener">Public Gemini launch discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/GithubCopilot/comments/1wubi60/hydrafusion_in_now_available_in_vs_code_and_the/" target="_blank" rel="noopener">Public HydraFusion access discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
     </section>
     <section class="archive" id="archive" aria-labelledby="archive-title">
       <div class="section-head">
@@ -129,6 +127,78 @@
         <h2 id="archive-title">The archive.</h2>
         <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
       </div>
+
+      <details class="archive-edition">
+        <summary>
+          <span><b>September 30, 2026</b><small>06:34 PT · Edition 072</small></span>
+          <strong>The agent is becoming part of the operating environment.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
+        <div class="archive-body">
+          <article>
+            <p class="category">Persistent agents · Standing authority</p>
+            <h3>The agent is becoming part of the operating environment.</h3>
+            <p>OpenAI launched Dots, persistent GPT-6 Astra agents that keep working between conversations from their own cloud computer and browser. A dot can carry memory and saved notes across ChatGPT, Slack, Microsoft Teams, and calls; use connected apps; decide when to pause and resume; run background agents in parallel; and optionally reach one connected local computer. The rollout covered eligible Pro, Business Premium, and Enterprise accounts, with Enterprise access off by default. OpenAI's administrative documentation separated dot access, messaging, local execution, cloud browser, cloud network, cloud computer, password-manager, plugin, and third-party authorization controls. It also said custom rules could not override built-in safeguards, disabling custom rules did not force approval for every action, and the cloud computer did not inherit a member's VPN, browser sessions, or device policy. OpenAI had not published field reliability, false-action rates, post-introductory usage economics, or evidence that the full permission stack behaved consistently across every route.</p>
+            <div class="archive-callout"><b>Operator read</b><p>Treat every persistent agent as a service identity plus a managed endpoint—not as a chat preference. Give it an accountable owner, approved purpose, separate cloud and local authority maps, event subscriptions, cost ceiling, evidence store, review queue, inactivity expiry, and tested kill path. MSPs should package the lifecycle: onboarding, connector and browser policy, approval design, monitoring, quarterly recertification, incident response, and provable offboarding.</p></div>
+            <a class="source" href="https://learn.chatgpt.com/docs/dots" target="_blank" rel="noopener">OpenAI's operating model, memory, channels, computers, and permissions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces" target="_blank" rel="noopener">Enterprise controls, defaults, and boundary details <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://www.axios.com/2026/09/29/openai-dots-ai-assistant-devday" target="_blank" rel="noopener">Independent launch reporting and demo context <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Model operations · Route qualification</p>
+              <h3>Sol moves near-frontier capability into the default route.</h3>
+              <p>OpenAI released GPT-6.1 Sol for coding, computer use, and professional work with a 1.05-million-token context window and standard API pricing of $2 per million input tokens and $10 per million output tokens. Long prompts above 272,000 input tokens carried higher rates, Fast mode doubled standard pricing, and EU-resident processing excluded Fast. OpenAI classified the model as Critical for cybersecurity and High for biological and chemical capability. In a 49,650-task simulation of internal Codex traffic, it recorded 28 severity-3-or-higher flags versus 27 for Astra; OpenAI cautioned that the exercise was not a direct measure of external deployment safety.</p>
+              <a class="source" href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" target="_blank" rel="noopener">OpenAI's context, pricing, residency, and tool-route details <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              <a class="source" href="https://deploymentsafety.openai.com/gpt-6-1-sol/respecting-auto-review" target="_blank" rel="noopener">OpenAI's safety classification and deployment simulation <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Frontier governance · Voluntary assurance</p>
+              <h3>Six major developers signed the same four-layer audit promise.</h3>
+              <p>OpenAI, Anthropic, Google, Meta, Nvidia, and SpaceX/xAI signed a White House accord calling for capability and alignment controls during training and deployment, an empowered internal oversight team, an independent external auditor or evaluator, and an independent board committee that receives reports and oversees remediation. The commitment was voluntary and anticipated recurring meetings; it did not specify evaluator access, methods, cadence, disclosure, enforcement, or a timetable for law.</p>
+              <a class="source" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Full accord text and four assurance layers <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              <a class="source" href="https://apnews.com/article/trump-ai-anthropic-musk-595796511f110fc006cca0d01329733e" target="_blank" rel="noopener">AP corroboration, signers, and voluntary status <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Enterprise agents · Interactive evaluation</p>
+              <h3>A business benchmark adds delay, feedback, and missing information.</h3>
+              <p>The EnterpriseBench preprint combined existing business and financial question sets with three interactive environments: consulting cases that required multi-turn information seeking, a supply-chain Beer Game with delayed effects, and a digital twin for workforce, risk, and project planning. Across nine agent methods and four backbone models, the authors reported no stable, comprehensive reliability across task types. It was an initial preprint and simulated benchmark—not production outcome evidence—but it tested a more useful unit than static question answering.</p>
+              <a class="source" href="https://arxiv.org/abs/2609.37658" target="_blank" rel="noopener">EnterpriseBench preprint, environments, method, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Persistence turns convenience into operations.</h3>
+            <p>The durable shift was from sessions to standing workers: identity survived, triggers arrived asynchronously, evidence spanned systems, and assurance had to outlive the model and vendor route.</p>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Persistent agents · Joiner, mover, leaver</p>
+              <h3>Offboarding is now a systems test.</h3>
+              <p>A dot could retain notes, run from a cloud computer, appear in communication channels, use plugins, and optionally reach a local device. Removing chat access alone did not prove that every dependent authorization or running task stopped.</p>
+              <div class="archive-callout"><b>Governance move</b> Maintain one lifecycle record for owner, purpose, cloud identity, channel identity, apps, website sessions, local computer, password manager, schedules, child work, memory, cost center, and expiry. On role change or departure, revoke each route, stop queued and running work, export required evidence, delete retained state under policy, and issue a tested closure receipt. <a class="source" href="https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces" target="_blank" rel="noopener">OpenAI's separately managed access paths <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">Event-driven work · Delivery contracts</p>
+              <h3>A watch instruction is a production integration.</h3>
+              <p>OpenAI's MCP Events path let a plugin register events, accept a signed webhook subscription, and wake a chat to act. Its implementation did not support polling, streaming, or the draft protocol's gap and terminated notifications.</p>
+              <div class="archive-callout"><b>Architecture move</b> Keep a provider-neutral subscription ledger with owner, source, filter, callback, secret rotation, requested effect, approval policy, last event, expiry, and cancellation state. Add idempotency, deduplication, missed-event reconciliation, rate limits, dead-letter handling, and a visible pause switch; test what happens when delivery succeeds but the business action fails. <a class="source" href="https://developers.openai.com/plugins/build/mcp-events" target="_blank" rel="noopener">OpenAI's MCP event flow and delivery limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">External assurance · Evidence rights</p>
+              <h3>An auditor label is not an assurance result.</h3>
+              <p>The White House accord established a common control shape, but each signer could still choose the scope, access, evaluator, evidence, cadence, materiality threshold, and disclosure practice unless those terms became concrete.</p>
+              <div class="archive-callout"><b>Procurement move</b> Add an evaluator-rights schedule to frontier-model contracts: systems and routes in scope, access to logs and incidents, independence and conflicts, test authority, evidence retention, severity thresholds, remediation deadlines, retest rights, customer notice, public reporting, and consequences for unresolved findings. Map every claim to a dated report and route version. <a class="source" href="https://www.washingtonexaminer.com/news/white-house/4747747/full-trump-white-house-accord-ai-super-intelligence/" target="_blank" rel="noopener">Accord commitments and unresolved implementation layer <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+          </div>
+          <article>
+            <p class="category">Connor's bottom line</p>
+            <h3>Operate the lifecycle before scaling the headcount.</h3>
+            <blockquote>The always-on agent is not another assistant feature. It is a standing worker with memory, identity, triggers, tools, and spend. Operate the lifecycle before scaling the headcount.</blockquote>
+            <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible; indexed X results did not expose a representative practitioner sample. In a small, non-representative set of public Reddit threads, early attention centered on unclear post-introductory usage economics, slow or excessive background work, and confusion about how a persistent agent differed from existing task agents. Individual reports were not independently verified. The edition treated them as launch-qualification questions, not failure rates. <a class="source" href="https://www.reddit.com/r/OpenAI/comments/1wtfsn4/openai_launches_dots_longrunning_agents/" target="_blank" rel="noopener">Public launch discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/codex/comments/1wtyefd/struggling_to_understand_the_purpose_of_dots_can/" target="_blank" rel="noopener">Public workflow-positioning sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+          </article>
+        </div>
+      </details>
 
       <details class="archive-edition">
         <summary>
