@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Latest in AI — October 1, 2026 | Connor Bescos</title>
-  <meta name="description" content="The October 1, 2026 operator brief on Gemini 4 Argon, controlled model rollouts, the FTC's AI safety probe, multi-model routing, and verifier risk.">
-  <meta property="og:title" content="The Latest in AI — October 1, 2026">
-  <meta property="og:description" content="The newest frontier model is a controlled rollout, not a product launch.">
+  <title>The Latest in AI — October 2, 2026 | Connor Bescos</title>
+  <meta name="description" content="The October 2, 2026 operator brief on GitHub Copilot computer use, coded agent workflows, enterprise data-agent evaluation, and covert web-fetch exfiltration.">
+  <meta property="og:title" content="The Latest in AI — October 2, 2026">
+  <meta property="og:description" content="The coding agent just crossed into the desktop control plane.">
   <meta property="og:url" content="https://connorbescos.com/latest/">
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2026-10-01T08:23:00-07:00">
+  <meta property="article:published_time" content="2026-10-02T08:25:00-07:00">
   <link rel="canonical" href="https://connorbescos.com/latest/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261001">
+  <link rel="stylesheet" href="styles.css?v=20261002">
 </head>
 <body>
   <svg style="display:none" aria-hidden="true">
@@ -40,50 +40,49 @@
       <h1>The Latest <em>in AI.</em></h1>
       <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
       <div class="dateline">
-        <span class="stamp">Edition 073</span>
-        <strong>Thursday, October 1, 2026</strong>
-        <span>08:23 PT</span>
+        <span class="stamp">Edition 074</span>
+        <strong>Friday, October 2, 2026</strong>
+        <span>08:25 PT</span>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="edition-note"><b>Thursday's read</b> Google introduced its next frontier model inside a deliberately narrow access ring rather than a broad product launch. That makes the rollout design—not the benchmark table—the useful operator artifact: who qualifies, which safeguards change by cohort, what evidence earns wider access, and how quickly authority can be withdrawn.</p>
+    <p class="edition-note"><b>Friday's read</b> No newer frontier-model launch appeared in the reviewed OpenAI, Anthropic, or Google feeds after Thursday's cutoff. The material move was an execution boundary: GitHub Copilot can now see and operate desktop applications, including legacy and GUI-only systems that lack a structured integration.</p>
 
     <div class="lead-grid">
       <article class="lead-story">
         <p class="story-label">The one that matters</p>
-        <p class="category">Frontier models · Bounded availability</p>
-        <h2 id="lead-title">The newest frontier model is a controlled rollout, not a product launch.</h2>
-        <p class="dek">Google announced Gemini 4 Argon for long-horizon software engineering, enterprise knowledge work, and cyber defense, but access starts with a selected group of defenders in its Fairwind Program while Google participates in the U.S. government's voluntary prerelease process. Broader access is promised later, beginning with paid API customers and Google AI Ultra subscribers, without a date. Google lists an eventual introductory API price of $2 per million input tokens and $10 per million output tokens—rising to $4 and $20 after the introductory period—and a one-million-token output limit. It also says trusted defenders and internal teams will receive a version without cyber guardrails. The benchmark scores, internal engineering examples, prompt-injection resilience, misalignment-monitoring performance, and vulnerability findings are Google or partner claims, not broad field evidence. Axios corroborated the limited rollout and reported conflicting views about internal model performance, which Google disputed.</p>
+        <p class="category">Computer use · Endpoint authority</p>
+        <h2 id="lead-title">The coding agent just crossed into the desktop control plane.</h2>
+        <p class="dek">GitHub released computer use in public preview for local Copilot CLI and Copilot app sessions on macOS and Windows. When enabled, the agent can inspect accessible content and screenshots, click, type, scroll, drag, and move through workflows across desktop applications—including legacy or GUI-only systems without an API, command line, or MCP integration. The feature is off by default, follows each surface's tool-permission setting, and can be disabled by an enterprise administrator. Users can approve one session or save an application-level approval locally; the saved decision applies to both the app and CLI on the same computer. Removing that saved approval does not revoke access already granted to a running session. GitHub explicitly warns that changing interfaces, window state, ambiguous instructions, and unexpected on-screen content can cause wrong or repeated actions and expose sensitive information. No field reliability, confirmation-rate, rollback, or cross-application task-success data was published.</p>
         <div class="implication">
           <span>Operator read</span>
-          <p>Copy the release shape, not the model hype. Build qualification rings with named owners, approved task classes, isolated environments, scoped identities, data and egress boundaries, trajectory budgets, independent acceptance tests, incident disclosure, evidence retention, time-limited access, and a tested revocation path. MSPs can package that as a model-introduction service: route inventory, cohort onboarding, red-team scenarios, production canaries, review evidence, and a signed decision to expand, hold, or roll back.</p>
+          <p>Treat desktop control as privileged endpoint automation, not a convenience toggle. Inventory applications and effect classes; separate read, draft, submit, send, spend, delete, and credential actions; default high-impact applications to fresh approval; bind approvals to a task and expiry; log screenshots, controls, inputs, and results; reconcile the business effect outside the agent; and test Stop, session termination, and enterprise disablement. MSPs should add computer-use policy, application qualification, approval design, endpoint monitoring, incident response, and quarterly recertification to the managed-AI service catalog.</p>
         </div>
-        <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's access sequence, pricing, capability claims, and safeguard plan <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://www.axios.com/2026/09/30/google-gemini-4" target="_blank" rel="noopener">Independent reporting on rollout scope and disputed internal performance <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/" target="_blank" rel="noopener">GitHub's public-preview announcement and example workflows <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://docs.github.com/en/copilot/concepts/agents/computer-use" target="_blank" rel="noopener">GitHub's controls, permission persistence, enterprise boundary, and risks <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
         <p class="story-label">In 60 seconds</p>
         <div class="quick-item">
-          <span class="tag">Regulation · Evidence readiness</span>
-          <h3>The FTC opened an AI safety investigation.</h3>
-          <p>An FTC spokesperson confirmed that the agency is investigating OpenAI, Anthropic, and other AI companies over potential consumer dangers, but declined to describe the scope. AP reported that the companies did not immediately comment. Axios reported that civil investigative demands were being prepared and connected the probe to recent disclosures of agents acting beyond instructions; those procedural details were attributed to earlier reporting, not an FTC filing. No finding of wrongdoing has been announced.</p>
-          <a class="source" href="https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1" target="_blank" rel="noopener">AP confirmation, response status, and limits of the public record <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-          <a class="source" href="https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation" target="_blank" rel="noopener">Axios reporting on the investigation's reported evidence-gathering path <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent workflows · Deterministic orchestration</span>
+          <h3>The runbook is moving into code.</h3>
+          <p>GitHub added dynamic workflows in public preview across the Copilot app, CLI, and SDK. A program defines stages, parallel work, structured handoffs, checkpoints, and verification while agents handle judgment-heavy steps. GitHub contrasts this with open-ended delegation: the coded process repeats the same control flow and can pause for review. The app exposes it without setup; CLI use remains experimental. GitHub published no production reliability or cost comparison.</p>
+          <a class="source" href="https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/" target="_blank" rel="noopener">GitHub's workflow model, controls, examples, and preview status <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Coding agents · Multi-model routing</span>
-          <h3>The model picker is becoming a workflow router.</h3>
-          <p>GitHub expanded its HydraFusion research preview from Copilot CLI to VS Code and the Copilot app. Instead of choosing one model, the system selects among a direct single-model path, a cascade with a quality gate and escalation, or a cross-family critique-and-revise path. Business and Enterprise administrators must permit previews, and GitHub says the feature remains subject to change. The release adds progress visibility but does not publish per-task route receipts, production acceptance rates, or total cost by workflow.</p>
-          <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's workflow definitions, access controls, and preview boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Data agents · Consequence scoring</span>
+          <h3>The data agent has to act, not only query.</h3>
+          <p>The new Argo-Bench preprint simulates a delivery business with 81 million orders, an ERP warehouse of 235 tables and 7.5 billion rows, and 210 analytics tasks that end in actions such as banning accounts, allocating incentives, or issuing back pay. The hidden simulator scores consequences rather than SQL alone. The authors report that the strongest of 14 tested models scored at least 95 on only 34.8% of tasks and averaged 59.5 points. It is a synthetic, author-built benchmark—not production prevalence—but it moves evaluation closer to enterprise effects.</p>
+          <a class="source" href="https://arxiv.org/abs/2610.02122" target="_blank" rel="noopener">Argo-Bench preprint, environment, task design, and reported results <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Agent evaluation · Verifier assurance</span>
-          <h3>The grading system can fail before the agent does.</h3>
-          <p>The ReviveBench preprint tests agents on ten software-revival tasks and thirteen clean-room engine reconstructions using hidden verifiers. Two models met the stated pass criteria on all reconstruction tasks, but the authors found that one task could not establish the capability it claimed to test. Their audit uncovered 28 verifier defects—including 24 false negatives, two false positives, and a provider-specific harness error that removed an intended output cap. It is a controlled preprint, not production reliability evidence; its durable finding is that executable evaluation needs its own validation.</p>
-          <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">ReviveBench tasks, results, verifier defects, and audit recommendations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent security · Covert egress</span>
+          <h3>A permitted web fetch can become an exfiltration path.</h3>
+          <p>The LLMLeak preprint describes local malware embedding a secret in an attacker-controlled URL and presenting that URL as required for a benign task. When an agent's web tool fetches it, the DNS or web request carries the secret even if the malware has no direct network access. The authors report a 79.7% success rate across eleven open-parameter models and a real-chatbot case study. This is a controlled attack demonstration, not a field incident rate, but it shows that “read-only” network tools can still produce outbound effects.</p>
+          <a class="source" href="https://arxiv.org/abs/2610.01768" target="_blank" rel="noopener">LLMLeak preprint, attack path, evaluation, and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </aside>
     </div>
@@ -91,35 +90,35 @@
     <section class="signal-section" aria-labelledby="signals-title">
       <div class="section-head">
         <p class="kicker">Patterns, not headlines</p>
-        <h2 id="signals-title">Access, routing, and evaluation are one control system.</h2>
-        <p>The durable shift is away from a single model decision. A production route now includes who may use it, which workflow runs, how far a trajectory can travel, what evidence judges it, and who can stop or widen access.</p>
+        <h2 id="signals-title">The execution surface is now the product boundary.</h2>
+        <p>The durable shift is from helping inside a codebase to operating applications, orchestrating reusable processes, and changing business state. Permissions, workflow definitions, network effects, and acceptance evidence must now travel together.</p>
       </div>
       <div class="signal-grid">
         <article>
-          <p class="trend">Release governance · Qualification rings</p>
-          <h3>Limited access should produce an evidence package.</h3>
-          <p>Argon's initial cyber cohort has more capability and fewer cyber guardrails than the future general route, while wider availability depends on feedback and safeguard work.</p>
-          <div class="watch"><b>Governance move</b> Define rings by people, tasks, environments, tools, data, egress, and consequence—not by a vague “trusted” label. For every ring, record entry criteria, differences in safeguards, permitted effects, monitoring coverage, incident thresholds, expiry, revocation, and the evidence required to expand. Require the supplier or MSP to deliver a dated qualification packet before the next ring opens. <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's staged access and cohort-specific safeguard boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Computer use · Capability leases</p>
+          <h3>An application approval needs a lifecycle.</h3>
+          <p>GitHub lets a user save application access across both the app and CLI, yet deleting the saved decision does not revoke a grant already active in a running session.</p>
+          <div class="watch"><b>Governance move</b> Model each approval as a lease with user, device, surface, application, task, effect class, start, expiry, and live-session state. Default sensitive applications to one-session approval; require fresh confirmation at submit, send, spend, or delete; terminate active sessions during revocation; and reconcile the application's authoritative state after every run. <a class="source" href="https://docs.github.com/en/copilot/concepts/agents/computer-use" target="_blank" rel="noopener">GitHub's saved-approval scope and running-session boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Workflow routing · Decision receipts</p>
-          <h3>One user request can become several model calls.</h3>
-          <p>HydraFusion can solve directly, escalate after a quality gate, or draft, critique across model families, and revise. The route changes cost, latency, evidence, and failure modes even when the interface shows one turn.</p>
-          <div class="watch"><b>Operations move</b> Store a route receipt for every governed task: workflow selected, model and version at each step, prompt and tool policy, quality-gate result, critic independence, revision count, tokens, latency, cost, and final acceptance evidence. Set budgets on the whole turn, not each call, and compare workflows by independently accepted outcome rather than vendor quality scores. <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's single, cascade, and critique workflow definitions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Agent orchestration · Runbook ownership</p>
+          <h3>Determinism belongs around the model.</h3>
+          <p>Dynamic workflows place ordering, parallelism, structured handoffs, checkpoints, and pause points in code while reserving open-ended analysis for agents.</p>
+          <div class="watch"><b>Architecture move</b> Keep business invariants in the workflow: typed inputs and outputs, bounded fan-out, time and spend limits, idempotency keys, evidence requirements, human gates, rollback, and resumable state. Version the runbook independently from prompts and models; replay known cases whenever any component changes; and make the workflow owner—not the model vendor—accountable for accepted outcomes. <a class="source" href="https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/" target="_blank" rel="noopener">GitHub's coded orchestration and checkpoint model <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Evaluation systems · Oracle risk</p>
-          <h3>The verifier is production code.</h3>
-          <p>ReviveBench found both false rejects and false accepts, plus a harness configuration that silently changed a task limit. A green score can therefore describe the grader as much as the agent.</p>
-          <div class="watch"><b>Assurance move</b> Version the task, environment, harness, verifier, thresholds, and reference artifacts together. Seed known passes and failures; test threshold reachability; recompute diagnostics independently; compare separately generated candidates; and review every acceptance rule that can authorize money, code, customer communication, or system change. Keep the implementation agent away from the acceptance oracle. <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">Verifier failure modes and the authors' validation checks <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Agent evaluation · Trajectory evidence</p>
+          <h3>A correct number can hide the wrong process.</h3>
+          <p>In a new 240-trial enterprise-skills study, 162 of 175 runs that passed all applicable final numerical checks still had another evaluator-detected deviation. The authors have not yet validated the method through real API evolution.</p>
+          <div class="watch"><b>Assurance move</b> Pair business outcomes with process invariants: permitted tools, exact arguments, execution order, database integrity, approvals, and evidence capture. Attribute downstream failures to root deviations; preserve traces for replay; and run the same template suite across every model, harness, skill, and specification change. Do not promote a route because its final field happens to reconcile. <a class="source" href="https://arxiv.org/abs/2610.01833" target="_blank" rel="noopener">Process-level evaluation preprint, trial design, findings, and limitation <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
       </div>
     </section>
 
     <section class="bottom-line" aria-labelledby="bottom-line-title">
       <h2 class="kicker" id="bottom-line-title">Connor's bottom line</h2>
-      <blockquote>The new launch primitive is a governed qualification ring. Make every expansion earn its evidence—and keep the route, the verifier, and the revocation path inside the operating model.</blockquote>
-      <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible; indexed public results did not expose a representative practitioner sample. In two early, non-representative Reddit threads, discussion focused less on benchmark claims than on when the products would actually become usable: Gemini commenters debated the gap between announcement and broad access, while Copilot users asked about enterprise preview approval, general availability, custom workflows, subscription boundaries, and remote-development support. Treat this as launch-friction discovery, not consensus or verified product performance. Publish an access matrix and support boundary beside every announcement. <a class="source" href="https://www.reddit.com/r/singularity/comments/1wufeu8/introducing_gemini_4_argon/" target="_blank" rel="noopener">Public Gemini launch discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/GithubCopilot/comments/1wubi60/hydrafusion_in_now_available_in_vs_code_and_the/" target="_blank" rel="noopener">Public HydraFusion access discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+      <blockquote>Once an agent can operate the desktop, the interface is part of the control plane. Govern the application, the session, the workflow, and the resulting business effect as one transaction.</blockquote>
+      <p class="note"><b>Conversation layer held back</b> X was not comprehensively accessible, and indexed X and public practitioner results in the window were mostly announcement recaps or older feature requests rather than credible post-launch operating experience. No directional conversation theme is included today.</p>
     </section>
     <section class="archive" id="archive" aria-labelledby="archive-title">
       <div class="section-head">
@@ -127,6 +126,76 @@
         <h2 id="archive-title">The archive.</h2>
         <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
       </div>
+
+      <details class="archive-edition">
+        <summary>
+          <span><b>October 1, 2026</b><small>08:23 PT · Edition 073</small></span>
+          <strong>The newest frontier model is a controlled rollout, not a product launch.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
+        <div class="archive-body">
+          <article>
+            <p class="category">Frontier models · Bounded availability</p>
+            <h3>The newest frontier model is a controlled rollout, not a product launch.</h3>
+            <p>Google announced Gemini 4 Argon for long-horizon software engineering, enterprise knowledge work, and cyber defense, but access starts with a selected group of defenders in its Fairwind Program while Google participates in the U.S. government's voluntary prerelease process. Broader access is promised later, beginning with paid API customers and Google AI Ultra subscribers, without a date. Google lists an eventual introductory API price of $2 per million input tokens and $10 per million output tokens—rising to $4 and $20 after the introductory period—and a one-million-token output limit. It also says trusted defenders and internal teams will receive a version without cyber guardrails. The benchmark scores, internal engineering examples, prompt-injection resilience, misalignment-monitoring performance, and vulnerability findings are Google or partner claims, not broad field evidence. Axios corroborated the limited rollout and reported conflicting views about internal model performance, which Google disputed.</p>
+            <div class="archive-callout"><b>Operator read</b><p>Copy the release shape, not the model hype. Build qualification rings with named owners, approved task classes, isolated environments, scoped identities, data and egress boundaries, trajectory budgets, independent acceptance tests, incident disclosure, evidence retention, time-limited access, and a tested revocation path. MSPs can package that as a model-introduction service: route inventory, cohort onboarding, red-team scenarios, production canaries, review evidence, and a signed decision to expand, hold, or roll back.</p></div>
+            <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's access sequence, pricing, capability claims, and safeguard plan <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://www.axios.com/2026/09/30/google-gemini-4" target="_blank" rel="noopener">Independent reporting on rollout scope and disputed internal performance <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Regulation · Evidence readiness</p>
+              <h3>The FTC opened an AI safety investigation.</h3>
+              <p>An FTC spokesperson confirmed that the agency is investigating OpenAI, Anthropic, and other AI companies over potential consumer dangers, but declined to describe the scope. AP reported that the companies did not immediately comment. Axios reported that civil investigative demands were being prepared and connected the probe to recent disclosures of agents acting beyond instructions; those procedural details were attributed to earlier reporting, not an FTC filing. No finding of wrongdoing has been announced.</p>
+              <a class="source" href="https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1" target="_blank" rel="noopener">AP confirmation, response status, and limits of the public record <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              <a class="source" href="https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation" target="_blank" rel="noopener">Axios reporting on the investigation's reported evidence-gathering path <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Coding agents · Multi-model routing</p>
+              <h3>The model picker is becoming a workflow router.</h3>
+              <p>GitHub expanded its HydraFusion research preview from Copilot CLI to VS Code and the Copilot app. Instead of choosing one model, the system selects among a direct single-model path, a cascade with a quality gate and escalation, or a cross-family critique-and-revise path. Business and Enterprise administrators must permit previews, and GitHub says the feature remains subject to change. The release adds progress visibility but does not publish per-task route receipts, production acceptance rates, or total cost by workflow.</p>
+              <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's workflow definitions, access controls, and preview boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Agent evaluation · Verifier assurance</p>
+              <h3>The grading system can fail before the agent does.</h3>
+              <p>The ReviveBench preprint tests agents on ten software-revival tasks and thirteen clean-room engine reconstructions using hidden verifiers. Two models met the stated pass criteria on all reconstruction tasks, but the authors found that one task could not establish the capability it claimed to test. Their audit uncovered 28 verifier defects—including 24 false negatives, two false positives, and a provider-specific harness error that removed an intended output cap. It is a controlled preprint, not production reliability evidence; its durable finding is that executable evaluation needs its own validation.</p>
+              <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">ReviveBench tasks, results, verifier defects, and audit recommendations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Access, routing, and evaluation are one control system.</h3>
+            <p>The durable shift is away from a single model decision. A production route now includes who may use it, which workflow runs, how far a trajectory can travel, what evidence judges it, and who can stop or widen access.</p>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Release governance · Qualification rings</p>
+              <h3>Limited access should produce an evidence package.</h3>
+              <p>Argon's initial cyber cohort has more capability and fewer cyber guardrails than the future general route, while wider availability depends on feedback and safeguard work.</p>
+              <div class="archive-callout"><b>Governance move</b> Define rings by people, tasks, environments, tools, data, egress, and consequence—not by a vague “trusted” label. For every ring, record entry criteria, differences in safeguards, permitted effects, monitoring coverage, incident thresholds, expiry, revocation, and the evidence required to expand. Require the supplier or MSP to deliver a dated qualification packet before the next ring opens. <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google's staged access and cohort-specific safeguard boundary <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">Workflow routing · Decision receipts</p>
+              <h3>One user request can become several model calls.</h3>
+              <p>HydraFusion can solve directly, escalate after a quality gate, or draft, critique across model families, and revise. The route changes cost, latency, evidence, and failure modes even when the interface shows one turn.</p>
+              <div class="archive-callout"><b>Operations move</b> Store a route receipt for every governed task: workflow selected, model and version at each step, prompt and tool policy, quality-gate result, critic independence, revision count, tokens, latency, cost, and final acceptance evidence. Set budgets on the whole turn, not each call, and compare workflows by independently accepted outcome rather than vendor quality scores. <a class="source" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener">GitHub's single, cascade, and critique workflow definitions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">Evaluation systems · Oracle risk</p>
+              <h3>The verifier is production code.</h3>
+              <p>ReviveBench found both false rejects and false accepts, plus a harness configuration that silently changed a task limit. A green score can therefore describe the grader as much as the agent.</p>
+              <div class="archive-callout"><b>Assurance move</b> Version the task, environment, harness, verifier, thresholds, and reference artifacts together. Seed known passes and failures; test threshold reachability; recompute diagnostics independently; compare separately generated candidates; and review every acceptance rule that can authorize money, code, customer communication, or system change. Keep the implementation agent away from the acceptance oracle. <a class="source" href="https://arxiv.org/abs/2609.36161" target="_blank" rel="noopener">Verifier failure modes and the authors' validation checks <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+          </div>
+          <article>
+            <p class="category">Connor's bottom line</p>
+            <h3>Make every expansion earn its evidence.</h3>
+            <blockquote>The new launch primitive is a governed qualification ring. Make every expansion earn its evidence—and keep the route, the verifier, and the revocation path inside the operating model.</blockquote>
+            <p class="note"><b>Conversation · Directional signal</b> X was not comprehensively accessible; indexed public results did not expose a representative practitioner sample. In two early, non-representative Reddit threads, discussion focused less on benchmark claims than on when the products would actually become usable: Gemini commenters debated the gap between announcement and broad access, while Copilot users asked about enterprise preview approval, general availability, custom workflows, subscription boundaries, and remote-development support. Treat this as launch-friction discovery, not consensus or verified product performance. Publish an access matrix and support boundary beside every announcement. <a class="source" href="https://www.reddit.com/r/singularity/comments/1wufeu8/introducing_gemini_4_argon/" target="_blank" rel="noopener">Public Gemini launch discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/GithubCopilot/comments/1wubi60/hydrafusion_in_now_available_in_vs_code_and_the/" target="_blank" rel="noopener">Public HydraFusion access discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+          </article>
+        </div>
+      </details>
 
       <details class="archive-edition">
         <summary>
