@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Latest in AI — October 6, 2026 | Connor Bescos</title>
-  <meta name="description" content="The October 6, 2026 operator brief on cross-agent trust, MCP security, active-intent state, agent network auditing, and emerging local AI governance.">
-  <meta property="og:title" content="The Latest in AI — October 6, 2026">
-  <meta property="og:description" content="An agent handoff is now a security boundary.">
+  <title>The Latest in AI — October 8, 2026 | Connor Bescos</title>
+  <meta name="description" content="The October 8, 2026 operator brief on generated interfaces, route-level model economics, version-aware governance, and evidence-grounded agent oversight.">
+  <meta property="og:title" content="The Latest in AI — October 8, 2026">
+  <meta property="og:description" content="The interface is becoming a generated operating layer.">
   <meta property="og:url" content="https://connorbescos.com/latest/">
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2026-10-06T06:34:00-07:00">
+  <meta property="article:published_time" content="2026-10-08T09:25:00-07:00">
   <link rel="canonical" href="https://connorbescos.com/latest/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261006">
+  <link rel="stylesheet" href="styles.css?v=20261008">
 </head>
 <body>
   <svg style="display:none" aria-hidden="true">
@@ -40,52 +40,49 @@
       <h1>The Latest <em>in AI.</em></h1>
       <p class="standfirst">The signal, the business implication, and what to do next. Researched across primary sources, reporting, research, and public practitioner conversation.</p>
       <div class="dateline">
-        <span class="stamp">Edition 078</span>
-        <strong>Tuesday, October 6, 2026</strong>
-        <span>06:34 PT</span>
+        <span class="stamp">Edition 079</span>
+        <strong>Thursday, October 8, 2026</strong>
+        <span>09:25 PT</span>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="edition-note"><b>Tuesday's read</b> No major model launch cleared the bar after Monday's cutoff. The consequential update is a cross-vendor security pattern: five unrelated teams fixed the same class of MCP trust failure, while new research sharpens how operators should represent intent and observe agent behavior.</p>
+    <p class="edition-note"><b>Thursday's read</b> Two major releases landed Wednesday: ChatGPT began generating native interactive interfaces inside answers, while Anthropic reset the price and speed floor for small models. The useful operator question is not which announcement wins; it is how to govern interfaces, routes, and evidence that now change at runtime.</p>
 
     <div class="lead-grid">
       <article class="lead-story">
         <p class="story-label">The one that matters</p>
-        <p class="category">Agent security · Delegated trust</p>
-        <h2 id="lead-title">An agent handoff is now a security boundary.</h2>
-        <p class="dek">Independent researcher Syed Anas Mohiuddin published a consolidated disclosure showing that security teams at Google, JPMorgan Chase, Weaviate, France's interministerial digital directorate, and the Tangerang City government independently confirmed and fixed the same server-side request forgery pattern in MCP servers. The implementations did not share an owner or codebase. In each, an agent-controlled URL, path, endpoint, or hostname could influence where a server made a privileged outbound request without a complete destination check. Google's CVE-2026-14540 affected MCP Toolbox for Databases versions 0.3.0 through 1.4.0; its version 1.5.0 fix validates resolved addresses during connection and redirects, blocks unsafe ranges, and fails early on an unsafe base URL. Rapid7 separately fixed a low-severity GraphQL injection in its Bulk Export MCP by replacing string interpolation with a parameterized variable. Mohiuddin calls the wider cross-protocol pattern “protocol pivoting”; another researcher told Ars it remains a subclass of indirect prompt injection. The disclosures and proof-of-concept work establish a recurring design failure and confirmed fixes—not observed exploitation or a prevalence rate. Five reported U.S. federal cases remain in triage and are not treated here as confirmed outcomes.</p>
+        <p class="category">AI interfaces · Generated software</p>
+        <h2 id="lead-title">The interface is becoming a generated operating layer.</h2>
+        <p class="dek">OpenAI began rolling GPT-6 with “Intelligent UI” into the Chat tab for Plus, Pro, Business, and Enterprise users on Wednesday, with Free and Go following Thursday and workplace access still dependent on administrator settings. The model can compose answers from text, graphics, buttons, forms, charts, and interactive tools rather than fitting every task into a fixed chat transcript. OpenAI says a native component library supplies the design foundation while a compiler processes the interface as the model generates it, allowing the experience to stream before the full answer is complete. GPT-6 can also begin answering while it continues to reason. OpenAI reports faster first responses and better internal evaluation scores, but those are vendor-run results; it acknowledges that design judgment still needs work. The change applies to ChatGPT's Chat experience. It does not change the models powering Work or Codex.</p>
         <div class="implication">
           <span>Operator read</span>
-          <p>Stop treating an internal agent, tool call, or delegated task as trusted because it came from inside the workflow. Inventory every MCP server, fetching tool, protocol handoff, service identity, credential, network position, redirect, log sink, and downstream effect. Validate resolved addresses at connection time and every redirect; pin the checked destination through use; parameterize queries; constrain each tool to the hosts and actions it needs; redact upstream bodies before logging; and attach origin, purpose, audience, authority, expiry, and approval state to every delegation. Test the assembled chain with hostile documents and tool responses, not only direct user prompts. For MSPs, connector qualification should include source review, dynamic egress tests, credential and log inspection, a signed authority map, patch ownership, and a repeatable retest after every server, tool, or orchestration change.</p>
+          <p>Treat generated UI as code with authority, not decorated model output. Define an allowed component and action vocabulary; bind every value to its source, freshness, and unit; distinguish explanation from input and preview from commit; require confirmation at consequential transitions; and reconcile the final business effect outside the interface. Test keyboard, screen-reader, zoom, localization, reduced-motion, error, partial-stream, stale-data, and small-screen states. Preserve the prompt, model route, component tree, data dependencies, interaction events, approvals, and resulting system changes as one replayable receipt. For MSPs and service teams, adaptive-interface qualification is a new managed layer spanning design systems, accessibility, security, analytics, and release governance.</p>
         </div>
-        <a class="source" href="https://anas-security-portfolio.vercel.app/protocol-pivoting-update.html" target="_blank" rel="noopener">Researcher's disclosure record, confirmed fixes, open items, and operating thesis <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://github.com/googleapis/mcp-toolbox/pull/3448" target="_blank" rel="noopener">Google's merged SSRF guard and version 1.5.0 release record <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://www.rapid7.com/db/vulnerabilities/cve-2026-97228/" target="_blank" rel="noopener">Rapid7's separate GraphQL injection advisory, scope, and fix <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-        <a class="source" href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/" target="_blank" rel="noopener">Ars Technica's independent reporting and terminology caveat <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        <a class="source" href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">OpenAI's interface architecture, rollout, evaluation claims, and product boundaries <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </article>
 
       <aside class="quick-read" aria-label="Three quick reads">
         <p class="story-label">In 60 seconds</p>
         <div class="quick-item">
-          <span class="tag">Local governance · Assurance proposals</span>
-          <h3>New York City is turning AI assurance into a procurement-and-liability question.</h3>
-          <p>All 51 members of the New York City Council convened Monday to examine AI risk. Representatives from OpenAI, Anthropic, Google, and Meta testified alongside former lab employees. The legislative package under discussion includes third-party validation, incident reporting for city contractors, whistleblower incentives, a private right of action, and an emergency-response plan. These are proposals, not enacted requirements, and their jurisdictional reach and implementation details remain contested. For operators, the near-term signal is that local buyers may ask for validation evidence, incident clocks, and accountable deployment records even without a national standard.</p>
-          <a class="source" href="https://council.nyc.gov/press/2026/09/25/3252/" target="_blank" rel="noopener">New York City Council's proposed package and October 5 hearing scope <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
-          <a class="source" href="https://apnews.com/article/ai-nyc-whistleblower-artificial-intelligence-4be252d137ff1de1006130cdbb42ec24" target="_blank" rel="noopener">AP reporting on the hearing, testimony, and unresolved risk questions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Model economics · High-volume work</span>
+          <h3>Haiku 5.5 makes the context boundary part of the price.</h3>
+          <p>Anthropic released Claude Haiku 5.5 across its platform, AWS, Google Cloud, and Azure, positioning it for classification, summarization, database queries, support, browser use, and subagent work. List pricing is $0.10 input and $0.50 output per million tokens through 100,000 prompt tokens, then $0.50 and $2.50 above that boundary. It is the first Haiku with adjustable effort. Anthropic says it averages roughly 75% lower cost than Haiku 4.5 after accounting for token-use changes, cut Sonnet 5.5 cache-read pricing in half, and added beta browser- and computer-use support to its SDKs. Those performance and savings figures are vendor-reported; Reuters independently confirmed the launch.</p>
+          <a class="source" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Anthropic's pricing tiers, effort control, availability, benchmarks, and caveats <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <a class="source" href="https://www.marketscreener.com/news/anthropic-launches-third-claude-5-5-model-expanding-ai-lineup-before-planned-ipo-ce785ddedd89f722" target="_blank" rel="noopener">Reuters confirmation of the release and lineup context <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Agent workflows · Active intent</span>
-          <h3>A rejected change can remain active in the model's working state.</h3>
-          <p>The new Intent-Eval preprint tests multi-turn tasks across tool actions, code, databases, and mathematics. The authors report that merely mentioning a proposed change can derail later execution even when the user rejects it, and that superseded requirements can continue shaping results. They call the failure “mentioned-as-in-effect confusion.” This is a controlled benchmark and training proposal, not a field incident rate, but it isolates a familiar workflow risk: a transcript is not the same thing as the current specification.</p>
-          <a class="source" href="https://arxiv.org/abs/2610.06496" target="_blank" rel="noopener">Intent-Eval preprint, task scope, failure pattern, and proposed training method <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Model governance · Route identity</span>
+          <h3>“GPT-6” now names different deployed versions by surface.</h3>
+          <p>OpenAI's October system card says the new ChatGPT versions of GPT-6 Sol and Luna replace GPT-5.6 in Chat, while Codex and ChatGPT Work continue using the September GPT-6 versions. The company classifies the October models as High capability in cyber and biological/chemical domains, below Critical, and reports overall safety gains alongside statistically significant regressions on several standard and under-18 evaluation categories. OpenAI says manual review found the violations borderline or low severity and applies system-level mitigations. The operating fact is simpler: product surface and release month are now required parts of the model identity.</p>
+          <a class="source" href="https://deploymentsafety.openai.com/gpt-6-october/model-safety" target="_blank" rel="noopener">OpenAI's October model split, capability classification, regressions, and safeguards <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
         <div class="quick-item">
-          <span class="tag">Agent monitoring · Network evidence</span>
-          <h3>Traffic can expose behavior without reliably exposing intent.</h3>
-          <p>The ANT preprint introduces 3,114 agent execution episodes across 20 tasks and five scenarios, with 276,417 bidirectional flows and 40,049 annotated behavior segments. Across thirteen traffic-analysis baselines, the authors report useful but uneven signals: methods struggled when malicious workflows resembled benign tasks and when scenarios produced similar traffic. The dataset is new and controlled, not proof that encrypted network telemetry can classify production agents reliably. It is evidence for a privacy-preserving observability layer—and for its limits.</p>
-          <a class="source" href="https://arxiv.org/abs/2610.06514" target="_blank" rel="noopener">ANT preprint, dataset composition, baseline results, and limitations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          <span class="tag">Agent oversight · Evidence design</span>
+          <h3>Long traces need behavior views, not longer summaries.</h3>
+          <p>The new AgentMonBench preprint evaluates whether monitors can find unspecified repository behavior, semantic changes that still pass existing tests, and consequential agent decisions later challenged by users. Its training-free Evidence-Grounded Behavior Graph groups source-linked code and trajectory evidence into behaviors, scopes, and explicit relations. Across eight models, the authors report that the graph usually improved decision identification and evidence localization over direct context. This is a new software-engineering benchmark, not deployed reliability evidence, but it tests the supervisor's actual problem: deciding what deserves verification.</p>
+          <a class="source" href="https://arxiv.org/abs/2610.06406" target="_blank" rel="noopener">AgentMonBench preprint, evidence graph, experiments, and scope <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </aside>
     </div>
@@ -93,35 +90,35 @@
     <section class="signal-section" aria-labelledby="signals-title">
       <div class="section-head">
         <p class="kicker">Patterns, not headlines</p>
-        <h2 id="signals-title">Trust, intent, and evidence must survive the handoff.</h2>
-        <p>The durable shift is from securing individual components to governing what crosses between them: authority moving across agents, requirements changing across turns, and behavior inferred from incomplete telemetry.</p>
+        <h2 id="signals-title">Runtime composition is now the product.</h2>
+        <p>The durable shift is away from fixed screens and fixed model names. Interfaces are generated, routes change by surface and context, and supervisors need evidence organized around behavior rather than chronology.</p>
       </div>
       <div class="signal-grid">
         <article>
-          <p class="trend">Agent delegation · Zero trust</p>
-          <h3>Delegation is an authorization event.</h3>
-          <p>The MCP disclosures show how a value that looks internal can carry attacker influence into a component with a different identity, credential, and network position.</p>
-          <div class="watch"><b>Security move</b> Require a handoff envelope with originating user and agent, source classification, requested effect, permitted tools, target audience, credential scope, expiry, approval state, and content hash. Re-authorize at every protocol boundary; never promote tool output into instructions by position alone; isolate connector credentials; and reconcile the authoritative business state after execution. Red-team low-guardrail agents as entry points into high-authority tools. <a class="source" href="https://anas-security-portfolio.vercel.app/protocol-pivoting-update.html" target="_blank" rel="noopener">Cross-vendor fixes and the protocol-boundary analysis <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Generated UI · Interface contracts</p>
+          <h3>Design systems are becoming policy systems.</h3>
+          <p>A model choosing components and interaction structure can change what users notice, understand, enter, and approve—even when the underlying answer is unchanged.</p>
+          <div class="watch"><b>Design move</b> Encode hierarchy, accessibility, permitted data types, uncertainty treatment, source display, action severity, confirmation, error recovery, and analytics as enforceable component contracts. Keep payment, send, publish, delete, and permission changes outside free-form generation. Evaluate task success, comprehension, error recovery, screen-reader output, and false confidence across multiple generated layouts; version the component library and compiler with the model route. <a class="source" href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener">Native component library and streaming compiler design <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Workflow state · Requirement authority</p>
-          <h3>The transcript is evidence, not the specification.</h3>
-          <p>Intent-Eval's failure mode appears when rejected or superseded language continues to influence the model after the user's actual decision has changed.</p>
-          <div class="watch"><b>Design move</b> Keep an explicit active-requirements ledger outside the conversation. Every proposed change should resolve to pending, accepted, rejected, or superseded; show the current state before execution; require confirmation for high-impact diffs; pass only active requirements to downstream agents; and preserve the transcript plus state transitions for audit. Test cancellation, reversal, contradictory edits, stale child agents, and resume-after-pause as first-class cases. <a class="source" href="https://arxiv.org/abs/2610.06496" target="_blank" rel="noopener">Rejected and superseded requirements in the controlled benchmark <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Model routing · Unit economics</p>
+          <h3>Token price is not task price.</h3>
+          <p>Haiku's lowest list price stops at 100,000 prompt tokens, while adjustable effort, cache use, compaction, retries, and larger-model escalation determine the actual route cost.</p>
+          <div class="watch"><b>FinOps move</b> Price the full accepted task by input, cached input, output, context band, effort, turns, compactions, tool time, retries, fallback, reviewer time, latency, and acceptance rate. Set route policies by workload shape, not benchmark rank; cap or reset context for narrow subagents; test quality on your own long-context distribution; and require the router to emit a receipt whenever it crosses a price band or escalates models. <a class="source" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Haiku's two context-price bands and effort control <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
         <article>
-          <p class="trend">Agent observability · Evidence fusion</p>
-          <h3>No single telemetry layer can prove safe behavior.</h3>
-          <p>ANT finds that network patterns can reveal useful behavioral primitives while still confusing malicious and benign workflows that look alike on the wire.</p>
-          <div class="watch"><b>Operations move</b> Correlate network flows with agent identity, handoff envelope, tool arguments, policy decision, credential use, effect receipt, data classification, approval, and final business reconciliation. Use traffic as a privacy-preserving detection and forensic layer—not an intent oracle. Measure false negatives on semantically similar tasks, keep content inspection proportionate, and design incident retention so investigators can join the layers without centralizing unrestricted conversation data. <a class="source" href="https://arxiv.org/abs/2610.06514" target="_blank" rel="noopener">Network-level agent auditing signal and ambiguity <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+          <p class="trend">Human oversight · Behavioral evidence</p>
+          <h3>Supervision should follow decisions, not scroll position.</h3>
+          <p>AgentMonBench organizes evidence around behaviors and consequences; the SPEAR position paper separately frames alignment as an ongoing loop of specification, process, evaluation, adaptation, and recalibration.</p>
+          <div class="watch"><b>Operations move</b> Turn each consequential decision into a review object with requirement, assumption, action, evidence, affected artifact, business effect, uncertainty, reversibility, and required approver. Surface semantic changes even when tests pass; preserve source locations; let users correct both the result and the standing rule; and periodically challenge learned preferences so repeated acceptance does not silently become permanent authority. <a class="source" href="https://arxiv.org/abs/2610.06406" target="_blank" rel="noopener">Evidence-grounded monitoring method and limits <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://arxiv.org/abs/2610.07204" target="_blank" rel="noopener">SPEAR interaction-alignment framework <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
         </article>
       </div>
     </section>
 
     <section class="bottom-line" aria-labelledby="bottom-line-title">
       <h2 class="kicker" id="bottom-line-title">Connor's bottom line</h2>
-      <blockquote>Agents do not inherit trust safely. Every handoff must carry less authority, clearer intent, and better evidence than the component receiving it would otherwise assume.</blockquote>
-      <p class="note"><b>Conversation layer held back</b> X was not comprehensively accessible, indexed X results did not expose a representative practitioner sample, and fresh public discussion of the MCP disclosures was dominated by article recaps rather than independent implementation evidence. No directional conversation theme is included.</p>
+      <blockquote>When software is composed at answer time, the durable asset is not the screen or the model name. It is the contract that keeps meaning, authority, cost, and evidence intact as all four change.</blockquote>
+      <p class="note"><b>Conversation · Directional signals</b> X was not comprehensively accessible; an indexed OpenAI post exposed announcement reaction but not a representative practitioner sample. In small public Reddit samples, generated UI prompted interest in interactive learning alongside confusion about which GPT-6 route actually replaced the prior Chat model. Separate Haiku threads focused on context growth and the price jump above 100,000 tokens; one widely shared comparison was a single extreme coding run, not a controlled cost study. Treat both themes as research prompts: test interface comprehension and route visibility, then measure your own context distribution and accepted-task cost. <a class="source" href="https://www.reddit.com/r/OpenAI/comments/1x045qs/gpt6_and_intelligent_ui_for_everyone/" target="_blank" rel="noopener">Public Intelligent UI reaction sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a> <a class="source" href="https://www.reddit.com/r/ClaudeAI/comments/1x0agoh/claude_haiku_55_cost_12x_more_than_gpt6_luna_for/" target="_blank" rel="noopener">Public long-context cost discussion sample <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
     </section>
     <section class="archive" id="archive" aria-labelledby="archive-title">
       <div class="section-head">
@@ -129,6 +126,78 @@
         <h2 id="archive-title">The archive.</h2>
         <p>Prior briefs remain available as published. Open an edition to read it in full.</p>
       </div>
+
+      <details class="archive-edition">
+        <summary>
+          <span><b>October 6, 2026</b><small>06:34 PT · Edition 078</small></span>
+          <strong>An agent handoff is now a security boundary.</strong>
+          <span class="toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+        </summary>
+        <div class="archive-body">
+          <article>
+            <p class="category">Agent security · Delegated trust</p>
+            <h3>An agent handoff is now a security boundary.</h3>
+            <p>Independent researcher Syed Anas Mohiuddin published a consolidated disclosure showing that security teams at Google, JPMorgan Chase, Weaviate, France's interministerial digital directorate, and the Tangerang City government independently confirmed and fixed the same server-side request forgery pattern in MCP servers. The implementations did not share an owner or codebase. In each, an agent-controlled URL, path, endpoint, or hostname could influence where a server made a privileged outbound request without a complete destination check. Google's CVE-2026-14540 affected MCP Toolbox for Databases versions 0.3.0 through 1.4.0; its version 1.5.0 fix validates resolved addresses during connection and redirects, blocks unsafe ranges, and fails early on an unsafe base URL. Rapid7 separately fixed a low-severity GraphQL injection in its Bulk Export MCP by replacing string interpolation with a parameterized variable. Mohiuddin calls the wider cross-protocol pattern “protocol pivoting”; another researcher told Ars it remains a subclass of indirect prompt injection. The disclosures and proof-of-concept work establish a recurring design failure and confirmed fixes—not observed exploitation or a prevalence rate. Five reported U.S. federal cases remain in triage and are not treated here as confirmed outcomes.</p>
+            <div class="archive-callout"><b>Operator read</b><p>Stop treating an internal agent, tool call, or delegated task as trusted because it came from inside the workflow. Inventory every MCP server, fetching tool, protocol handoff, service identity, credential, network position, redirect, log sink, and downstream effect. Validate resolved addresses at connection time and every redirect; pin the checked destination through use; parameterize queries; constrain each tool to the hosts and actions it needs; redact upstream bodies before logging; and attach origin, purpose, audience, authority, expiry, and approval state to every delegation. Test the assembled chain with hostile documents and tool responses, not only direct user prompts. For MSPs, connector qualification should include source review, dynamic egress tests, credential and log inspection, a signed authority map, patch ownership, and a repeatable retest after every server, tool, or orchestration change.</p></div>
+            <a class="source" href="https://anas-security-portfolio.vercel.app/protocol-pivoting-update.html" target="_blank" rel="noopener">Researcher's disclosure record, confirmed fixes, open items, and operating thesis <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://github.com/googleapis/mcp-toolbox/pull/3448" target="_blank" rel="noopener">Google's merged SSRF guard and version 1.5.0 release record <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://www.rapid7.com/db/vulnerabilities/cve-2026-97228/" target="_blank" rel="noopener">Rapid7's separate GraphQL injection advisory, scope, and fix <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            <a class="source" href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/" target="_blank" rel="noopener">Ars Technica's independent reporting and terminology caveat <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Local governance · Assurance proposals</p>
+              <h3>New York City is turning AI assurance into a procurement-and-liability question.</h3>
+              <p>All 51 members of the New York City Council convened Monday to examine AI risk. Representatives from OpenAI, Anthropic, Google, and Meta testified alongside former lab employees. The legislative package under discussion includes third-party validation, incident reporting for city contractors, whistleblower incentives, a private right of action, and an emergency-response plan. These are proposals, not enacted requirements, and their jurisdictional reach and implementation details remain contested. For operators, the near-term signal is that local buyers may ask for validation evidence, incident clocks, and accountable deployment records even without a national standard.</p>
+              <a class="source" href="https://council.nyc.gov/press/2026/09/25/3252/" target="_blank" rel="noopener">New York City Council's proposed package and October 5 hearing scope <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              <a class="source" href="https://apnews.com/article/ai-nyc-whistleblower-artificial-intelligence-4be252d137ff1de1006130cdbb42ec24" target="_blank" rel="noopener">AP reporting on the hearing, testimony, and unresolved risk questions <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Agent workflows · Active intent</p>
+              <h3>A rejected change can remain active in the model's working state.</h3>
+              <p>The new Intent-Eval preprint tests multi-turn tasks across tool actions, code, databases, and mathematics. The authors report that merely mentioning a proposed change can derail later execution even when the user rejects it, and that superseded requirements can continue shaping results. They call the failure “mentioned-as-in-effect confusion.” This is a controlled benchmark and training proposal, not a field incident rate, but it isolates a familiar workflow risk: a transcript is not the same thing as the current specification.</p>
+              <a class="source" href="https://arxiv.org/abs/2610.06496" target="_blank" rel="noopener">Intent-Eval preprint, task scope, failure pattern, and proposed training method <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+            <article>
+              <p class="category">Agent monitoring · Network evidence</p>
+              <h3>Traffic can expose behavior without reliably exposing intent.</h3>
+              <p>The ANT preprint introduces 3,114 agent execution episodes across 20 tasks and five scenarios, with 276,417 bidirectional flows and 40,049 annotated behavior segments. Across thirteen traffic-analysis baselines, the authors report useful but uneven signals: methods struggled when malicious workflows resembled benign tasks and when scenarios produced similar traffic. The dataset is new and controlled, not proof that encrypted network telemetry can classify production agents reliably. It is evidence for a privacy-preserving observability layer—and for its limits.</p>
+              <a class="source" href="https://arxiv.org/abs/2610.06514" target="_blank" rel="noopener">ANT preprint, dataset composition, baseline results, and limitations <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+            </article>
+          </div>
+          <article>
+            <p class="category">Signals</p>
+            <h3>Trust, intent, and evidence must survive the handoff.</h3>
+            <p>The durable shift is from securing individual components to governing what crosses between them: authority moving across agents, requirements changing across turns, and behavior inferred from incomplete telemetry.</p>
+          </article>
+          <div class="archive-columns">
+            <article>
+              <p class="category">Agent delegation · Zero trust</p>
+              <h3>Delegation is an authorization event.</h3>
+              <p>The MCP disclosures show how a value that looks internal can carry attacker influence into a component with a different identity, credential, and network position.</p>
+              <div class="archive-callout"><b>Security move</b> Require a handoff envelope with originating user and agent, source classification, requested effect, permitted tools, target audience, credential scope, expiry, approval state, and content hash. Re-authorize at every protocol boundary; never promote tool output into instructions by position alone; isolate connector credentials; and reconcile the authoritative business state after execution. Red-team low-guardrail agents as entry points into high-authority tools. <a class="source" href="https://anas-security-portfolio.vercel.app/protocol-pivoting-update.html" target="_blank" rel="noopener">Cross-vendor fixes and the protocol-boundary analysis <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">Workflow state · Requirement authority</p>
+              <h3>The transcript is evidence, not the specification.</h3>
+              <p>Intent-Eval's failure mode appears when rejected or superseded language continues to influence the model after the user's actual decision has changed.</p>
+              <div class="archive-callout"><b>Design move</b> Keep an explicit active-requirements ledger outside the conversation. Every proposed change should resolve to pending, accepted, rejected, or superseded; show the current state before execution; require confirmation for high-impact diffs; pass only active requirements to downstream agents; and preserve the transcript plus state transitions for audit. Test cancellation, reversal, contradictory edits, stale child agents, and resume-after-pause as first-class cases. <a class="source" href="https://arxiv.org/abs/2610.06496" target="_blank" rel="noopener">Rejected and superseded requirements in the controlled benchmark <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+            <article>
+              <p class="category">Agent observability · Evidence fusion</p>
+              <h3>No single telemetry layer can prove safe behavior.</h3>
+              <p>ANT finds that network patterns can reveal useful behavioral primitives while still confusing malicious and benign workflows that look alike on the wire.</p>
+              <div class="archive-callout"><b>Operations move</b> Correlate network flows with agent identity, handoff envelope, tool arguments, policy decision, credential use, effect receipt, data classification, approval, and final business reconciliation. Use traffic as a privacy-preserving detection and forensic layer—not an intent oracle. Measure false negatives on semantically similar tasks, keep content inspection proportionate, and design incident retention so investigators can join the layers without centralizing unrestricted conversation data. <a class="source" href="https://arxiv.org/abs/2610.06514" target="_blank" rel="noopener">Network-level agent auditing signal and ambiguity <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+            </article>
+          </div>
+          <article>
+            <p class="category">Connor's bottom line</p>
+            <h3>Every handoff needs its own trust decision.</h3>
+            <blockquote>Agents do not inherit trust safely. Every handoff must carry less authority, clearer intent, and better evidence than the component receiving it would otherwise assume.</blockquote>
+            <p class="note"><b>Conversation layer held back</b> X was not comprehensively accessible, indexed X results did not expose a representative practitioner sample, and fresh public discussion of the MCP disclosures was dominated by article recaps rather than independent implementation evidence. No directional conversation theme is included.</p>
+          </article>
+        </div>
+      </details>
 
       <details class="archive-edition">
         <summary>
